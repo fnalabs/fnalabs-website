@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Projects /> - should render Projects page static content 1`] = `
+Array [
+  <section
+    className="hero is-medium is-light is-bold"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="columns"
+        >
+          <div
+            className="column is-8-desktop is-offset-2-desktop"
+          >
+            <div
+              className="tile is-ancestor"
+            >
+              <div
+                className="tile is-parent is-3"
+              >
+                <div
+                  className="tile is-child has-text-centered"
+                >
+                  <svg
+                    style={
+                      Object {
+                        "marginTop": 12,
+                      }
+                    }
+                    viewBox="0 0 117.31758 135.46667"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m 58.658792,6.7627869 52.802038,30.4852731 0,60.970543 L 58.658789,128.70387 5.8567507,98.2186 l 1.7e-6,-60.970543 z"
+                      fill="none"
+                      stroke="#daa520"
+                      strokeWidth="12"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="tile is-parent is-vertical"
+              >
+                <div
+                  className="tile is-child"
+                >
+                  <article
+                    className="content"
+                  >
+                    <h1
+                      className="title"
+                    >
+                      Hive
+                      <sup>
+                        io
+                      </sup>
+                    </h1>
+                    <h4
+                      className="subtitle"
+                    >
+                      From startup to enterprise...
+                    </h4>
+                    <p>
+                      FnA Labs has evolved enterprise architecture by giving you the Hive
+                      <sup>
+                        io
+                      </sup>
+                       framework. Our product works for fresh startups and large-scale corporations alike. It is 
+                      <strong>
+                        reactive
+                      </strong>
+                       and 
+                      <strong>
+                        cloud-native
+                      </strong>
+                      , giving you more time to spend solving your business challenges and less time on your infrastructure. Furthermore the framework is flexible in allowing you to use multiple patterns and architectures, as well as providing robustness with support of the JSON Schema and Flux Standard Action specifications.
+                    </p>
+                  </article>
+                </div>
+                <div
+                  className="tile is-child"
+                >
+                  <a
+                    className="button is-success"
+                    href="https://hiveframework.io"
+                    target="_blank"
+                  >
+                    Release Candidate 2
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="section"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="columns"
+      >
+        <div
+          className="column is-10-desktop is-offset-1-desktop"
+        >
+          <h2
+            className="title"
+          >
+            More Projects...
+          </h2>
+          <div
+            className="tile is-ancestor is-vertical"
+          >
+            <div
+              className="tile is-parent is-paddingless"
+            >
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        model(JSON)
+                        <sup>
+                          js
+                        </sup>
+                      </h3>
+                      <p>
+                        Our Model JSON Serialization is a Model class used to serialize and transfer data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        <sup>
+                          js
+                        </sup>
+                        .
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-warning"
+                      href="https://fnalabs.github.io/model-json-js/"
+                      target="_blank"
+                    >
+                      Coming Soon
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        schema(JSON)
+                        <sup>
+                          js
+                        </sup>
+                      </h3>
+                      <p>
+                        Our JSON Schema validator is a data structure schema validator based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Promises and Thunks for complex data structures.
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-link"
+                      href="https://fnalabs.github.io/schema-json-js/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="tile is-parent is-paddingless"
+            >
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        test-automation
+                      </h3>
+                      <p>
+                        We created a reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our 
+                        <a
+                          href="https://github.com/fnalabs/test-automation-starter"
+                        >
+                          starter kit
+                        </a>
+                        , it will allow you to run automated browser tests inside a controlled environment. With the use of Docker you are able to automatically have tests run when a file is saved for development or single run containers for CI/CD deployments.
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-link"
+                      href="https://fnalabs.github.io/test-automation/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        Starter Kits
+                      </h3>
+                      <p>
+                        Over the course of our open source development journey, we've identified common underlying structures in the projects we've built. We decided to abstract those structures as starter kits:
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-npm-js"
+                          >
+                            NPM package
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-react-js"
+                          >
+                            React/Koa2 SSR webapp
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-koa2-js"
+                          >
+                            Koa2 REST service
+                          </a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;
+
+exports[`<Projects /> - should render Projects page static content and report page view 1`] = `
+Array [
+  <section
+    className="hero is-medium is-light is-bold"
+  >
+    <div
+      className="hero-body"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="columns"
+        >
+          <div
+            className="column is-8-desktop is-offset-2-desktop"
+          >
+            <div
+              className="tile is-ancestor"
+            >
+              <div
+                className="tile is-parent is-3"
+              >
+                <div
+                  className="tile is-child has-text-centered"
+                >
+                  <svg
+                    style={
+                      Object {
+                        "marginTop": 12,
+                      }
+                    }
+                    viewBox="0 0 117.31758 135.46667"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m 58.658792,6.7627869 52.802038,30.4852731 0,60.970543 L 58.658789,128.70387 5.8567507,98.2186 l 1.7e-6,-60.970543 z"
+                      fill="none"
+                      stroke="#daa520"
+                      strokeWidth="12"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="tile is-parent is-vertical"
+              >
+                <div
+                  className="tile is-child"
+                >
+                  <article
+                    className="content"
+                  >
+                    <h1
+                      className="title"
+                    >
+                      Hive
+                      <sup>
+                        io
+                      </sup>
+                    </h1>
+                    <h4
+                      className="subtitle"
+                    >
+                      From startup to enterprise...
+                    </h4>
+                    <p>
+                      FnA Labs has evolved enterprise architecture by giving you the Hive
+                      <sup>
+                        io
+                      </sup>
+                       framework. Our product works for fresh startups and large-scale corporations alike. It is 
+                      <strong>
+                        reactive
+                      </strong>
+                       and 
+                      <strong>
+                        cloud-native
+                      </strong>
+                      , giving you more time to spend solving your business challenges and less time on your infrastructure. Furthermore the framework is flexible in allowing you to use multiple patterns and architectures, as well as providing robustness with support of the JSON Schema and Flux Standard Action specifications.
+                    </p>
+                  </article>
+                </div>
+                <div
+                  className="tile is-child"
+                >
+                  <a
+                    className="button is-success"
+                    href="https://hiveframework.io"
+                    target="_blank"
+                  >
+                    Release Candidate 2
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="section"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="columns"
+      >
+        <div
+          className="column is-10-desktop is-offset-1-desktop"
+        >
+          <h2
+            className="title"
+          >
+            More Projects...
+          </h2>
+          <div
+            className="tile is-ancestor is-vertical"
+          >
+            <div
+              className="tile is-parent is-paddingless"
+            >
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        model(JSON)
+                        <sup>
+                          js
+                        </sup>
+                      </h3>
+                      <p>
+                        Our Model JSON Serialization is a Model class used to serialize and transfer data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        <sup>
+                          js
+                        </sup>
+                        .
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-warning"
+                      href="https://fnalabs.github.io/model-json-js/"
+                      target="_blank"
+                    >
+                      Coming Soon
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        schema(JSON)
+                        <sup>
+                          js
+                        </sup>
+                      </h3>
+                      <p>
+                        Our JSON Schema validator is a data structure schema validator based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Promises and Thunks for complex data structures.
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-link"
+                      href="https://fnalabs.github.io/schema-json-js/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="tile is-parent is-paddingless"
+            >
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        test-automation
+                      </h3>
+                      <p>
+                        We created a reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our 
+                        <a
+                          href="https://github.com/fnalabs/test-automation-starter"
+                        >
+                          starter kit
+                        </a>
+                        , it will allow you to run automated browser tests inside a controlled environment. With the use of Docker you are able to automatically have tests run when a file is saved for development or single run containers for CI/CD deployments.
+                      </p>
+                    </article>
+                  </div>
+                  <div
+                    className="tile is-child"
+                  >
+                    <a
+                      className="button is-link"
+                      href="https://fnalabs.github.io/test-automation/"
+                      target="_blank"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="tile is-parent"
+              >
+                <div
+                  className="tile is-child is-vertical box"
+                >
+                  <div
+                    className="tile is-child"
+                  >
+                    <article
+                      className="content"
+                    >
+                      <h3>
+                        Starter Kits
+                      </h3>
+                      <p>
+                        Over the course of our open source development journey, we've identified common underlying structures in the projects we've built. We decided to abstract those structures as starter kits:
+                      </p>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-npm-js"
+                          >
+                            NPM package
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-react-js"
+                          >
+                            React/Koa2 SSR webapp
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-koa2-js"
+                          >
+                            Koa2 REST service
+                          </a>
+                        </li>
+                      </ul>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;

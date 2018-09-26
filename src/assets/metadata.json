@@ -1,0 +1,38 @@
+{
+  "common": {
+    "siteName": "FnA Labs"
+  },
+  "/": {
+    "description": "FnA Labs is a modern mom and pop shop trying to enrich communities in both the physical and digital world. We research and develop advanced concepts to give you the finest products out there. Fn Awesome!",
+    "url": "https://fnalabs.com/",
+    "priority": 1.0
+  },
+  "/projects": {
+    "title": "Projects",
+    "description": "Our open source software projects work for start-ups as well as enterprise businesses. Check out all that we have to offer. Fn Awesome!",
+    "url": "https://fnalabs.com/projects",
+    "priority": 1.0
+  },
+  "/about": {
+    "title": "About",
+    "description": "At FnA Labs we work by applying the Four Paramounts to all of our products. We want to assure our users that each product has been built to be just as exceptional as they are. Fn Awesome!",
+    "url": "https://fnalabs.com/about",
+    "priority": 1.0
+  },
+  "/support": {
+    "title": "Support",
+    "description": "Whether our users need local set-up assistance, product documentation, or just want to say hello, we have you covered. Let’s Fn Awesome together!",
+    "url": "https://fnalabs.com/support",
+    "priority": 1.0
+  },
+  "/cookie": {
+    "title": "Cookie Policy",
+    "url": "https://fnalabs.com/cookie",
+    "priority": 0.0
+  },
+  "/privacy": {
+    "title": "Privacy Policy",
+    "url": "https://fnalabs.com/privacy",
+    "priority": 0.0
+  }
+}

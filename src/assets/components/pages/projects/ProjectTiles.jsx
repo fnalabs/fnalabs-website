@@ -16,7 +16,7 @@ export const ProjectTiles = () => (
                   <Tile type='child'>
                     <article className='content'>
                       <h3>model(JSON)<sup>js</sup></h3>
-                      <p>Our Model JSON Serialization is a Model class used to serialize and transfer data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)<sup>js</sup>.</p>
+                      <p>Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)<sup>js</sup>.</p>
                     </article>
                   </Tile>
 

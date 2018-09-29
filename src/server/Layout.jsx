@@ -25,9 +25,9 @@ export const Layout = () => (
 
     <body>
 
-      <div id='main'>
-        <Nav />
-        <Routes />
+      <div id='main' role='none'>
+        <header><Nav /></header>
+        <main><Routes /></main>
         <Footer />
       </div>
 

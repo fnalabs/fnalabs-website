@@ -13,6 +13,8 @@ describe('<Nav />', () => {
     expect(nav.find('.navbar-menu').hasClass('is-active')).toBe(false)
     nav.find('.navbar-burger').simulate('click')
     expect(nav.find('.navbar-menu').hasClass('is-active')).toBe(true)
+    nav.find('.navbar-burger').simulate('click')
+    expect(nav.find('.navbar-menu').hasClass('is-active')).toBe(false)
   })
 
   test('should render homepage nav correctly', () => {

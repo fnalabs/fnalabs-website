@@ -9,20 +9,22 @@ import Projects from '../../../../src/assets/components/pages/projects/Projects.
 
 jest.mock('react-ga')
 
-test('<Projects /> - should render Projects page static content', () => {
-  Cookies.get = jest.fn().mockReturnValue(false)
+describe('<Projects />', () => {
+  test('should render Projects page static content', () => {
+    Cookies.get = jest.fn().mockReturnValue(false)
 
-  const tree = renderer.create(<Projects location={{ pathname: '/projects' }} />).toJSON()
+    const tree = renderer.create(<Projects location={{ pathname: '/projects' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).not.toBeCalled()
-})
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).not.toBeCalled()
+  })
 
-test('<Projects /> - should render Projects page static content and report page view', () => {
-  Cookies.get = jest.fn().mockReturnValue(true)
+  test('should render Projects page static content and report page view', () => {
+    Cookies.get = jest.fn().mockReturnValue(true)
 
-  const tree = renderer.create(<Projects location={{ pathname: '/projects' }} />).toJSON()
+    const tree = renderer.create(<Projects location={{ pathname: '/projects' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).toBeCalledTimes(1)
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).toBeCalledTimes(1)
+  })
 })

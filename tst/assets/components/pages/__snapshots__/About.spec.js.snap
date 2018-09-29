@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<About /> - should render About page static content 1`] = `
+exports[`<About /> should render About page static content 1`] = `
 Array [
   <section
     className="hero is-light is-bold has-nav-spacing"
@@ -450,7 +450,7 @@ Array [
 ]
 `;
 
-exports[`<About /> - should render About page static content and report page view 1`] = `
+exports[`<About /> should render About page static content and report page view 1`] = `
 Array [
   <section
     className="hero is-light is-bold has-nav-spacing"

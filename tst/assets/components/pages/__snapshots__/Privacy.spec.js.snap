@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Privacy /> - should render Privacy Policy static content 1`] = `
+exports[`<Privacy /> should render Privacy Policy static content 1`] = `
 <article
   className="section has-nav-spacing"
 >

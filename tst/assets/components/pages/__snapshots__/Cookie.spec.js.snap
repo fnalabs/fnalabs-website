@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Cookie /> - should render Cookie Policy static content 1`] = `
+exports[`<Cookie /> should render Cookie Policy static content 1`] = `
 <article
   className="section has-nav-spacing"
 >

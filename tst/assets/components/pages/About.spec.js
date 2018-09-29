@@ -9,20 +9,22 @@ import About from '../../../../src/assets/components/pages/about/About.jsx'
 
 jest.mock('react-ga')
 
-test('<About /> - should render About page static content', () => {
-  Cookies.get = jest.fn().mockReturnValue(false)
+describe('<About />', () => {
+  test('should render About page static content', () => {
+    Cookies.get = jest.fn().mockReturnValue(false)
 
-  const tree = renderer.create(<About location={{ pathname: '/about' }} />).toJSON()
+    const tree = renderer.create(<About location={{ pathname: '/about' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).not.toBeCalled()
-})
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).not.toBeCalled()
+  })
 
-test('<About /> - should render About page static content and report page view', () => {
-  Cookies.get = jest.fn().mockReturnValue(true)
+  test('should render About page static content and report page view', () => {
+    Cookies.get = jest.fn().mockReturnValue(true)
 
-  const tree = renderer.create(<About location={{ pathname: '/about' }} />).toJSON()
+    const tree = renderer.create(<About location={{ pathname: '/about' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).toBeCalledTimes(1)
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).toBeCalledTimes(1)
+  })
 })

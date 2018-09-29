@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Projects /> - should render Projects page static content 1`] = `
+exports[`<Projects /> should render Projects page static content 1`] = `
 Array [
   <section
     className="hero is-medium is-light is-bold"
@@ -143,7 +143,7 @@ Array [
                         </sup>
                       </h3>
                       <p>
-                        Our Model JSON Serialization is a Model class used to serialize and transfer data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
                         <sup>
                           js
                         </sup>
@@ -297,7 +297,7 @@ Array [
 ]
 `;
 
-exports[`<Projects /> - should render Projects page static content and report page view 1`] = `
+exports[`<Projects /> should render Projects page static content and report page view 1`] = `
 Array [
   <section
     className="hero is-medium is-light is-bold"
@@ -440,7 +440,7 @@ Array [
                         </sup>
                       </h3>
                       <p>
-                        Our Model JSON Serialization is a Model class used to serialize and transfer data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
                         <sup>
                           js
                         </sup>

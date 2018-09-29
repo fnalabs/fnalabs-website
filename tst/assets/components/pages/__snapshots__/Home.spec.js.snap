@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home /> - should render homepage static content 1`] = `
+exports[`<Home /> should render homepage static content 1`] = `
 <section
   className="hero is-fullheight is-light is-bold"
 >
@@ -48,6 +48,7 @@ exports[`<Home /> - should render homepage static content 1`] = `
             <a
               className="button is-link"
               href="https://hiveframework.io"
+              target="_blank"
             >
               Learn More
             </a>
@@ -109,7 +110,7 @@ exports[`<Home /> - should render homepage static content 1`] = `
 </section>
 `;
 
-exports[`<Home /> - should render homepage static content and report page view 1`] = `
+exports[`<Home /> should render homepage static content and report page view 1`] = `
 <section
   className="hero is-fullheight is-light is-bold"
 >
@@ -157,6 +158,7 @@ exports[`<Home /> - should render homepage static content and report page view 1
             <a
               className="button is-link"
               href="https://hiveframework.io"
+              target="_blank"
             >
               Learn More
             </a>

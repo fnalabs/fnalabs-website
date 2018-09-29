@@ -7,8 +7,10 @@ import { Privacy } from '../../../../src/assets/components/pages/policies/Privac
 
 jest.mock('react-ga')
 
-test('<Privacy /> - should render Privacy Policy static content', () => {
-  const tree = renderer.create(<MemoryRouter initialEntries={['/privacy']}><Privacy location={{ pathname: '/privacy' }} /></MemoryRouter>).toJSON()
+describe('<Privacy />', () => {
+  test('should render Privacy Policy static content', () => {
+    const tree = renderer.create(<MemoryRouter><Privacy location={{ pathname: '/privacy' }} /></MemoryRouter>).toJSON()
 
-  expect(tree).toMatchSnapshot()
+    expect(tree).toMatchSnapshot()
+  })
 })

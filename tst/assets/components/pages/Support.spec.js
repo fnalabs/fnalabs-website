@@ -9,20 +9,22 @@ import Support from '../../../../src/assets/components/pages/support/Support.jsx
 
 jest.mock('react-ga')
 
-test('<Support /> - should render Support page static content', () => {
-  Cookies.get = jest.fn().mockReturnValue(false)
+describe('<Support />', () => {
+  test('should render Support page static content', () => {
+    Cookies.get = jest.fn().mockReturnValue(false)
 
-  const tree = renderer.create(<Support location={{ pathname: '/support' }} />).toJSON()
+    const tree = renderer.create(<Support location={{ pathname: '/support' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).not.toBeCalled()
-})
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).not.toBeCalled()
+  })
 
-test('<Support /> - should render Support page static content and report page view', () => {
-  Cookies.get = jest.fn().mockReturnValue(true)
+  test('should render Support page static content and report page view', () => {
+    Cookies.get = jest.fn().mockReturnValue(true)
 
-  const tree = renderer.create(<Support location={{ pathname: '/support' }} />).toJSON()
+    const tree = renderer.create(<Support location={{ pathname: '/support' }} />).toJSON()
 
-  expect(tree).toMatchSnapshot()
-  expect(ReactGA.pageview).toBeCalledTimes(1)
+    expect(tree).toMatchSnapshot()
+    expect(ReactGA.pageview).toBeCalledTimes(1)
+  })
 })

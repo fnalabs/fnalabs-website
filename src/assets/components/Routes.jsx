@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
 
-import { About, Cookie, Home, Privacy, Projects, Support } from './pages'
+import { About, Cookie, Home, Privacy, Projects, Support } from 'pages'
 
 export const Routes = () => (
   <Switch>

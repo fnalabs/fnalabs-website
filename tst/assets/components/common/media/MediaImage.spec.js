@@ -2,7 +2,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import MediaImage from '../../../../../src/assets/components/common/media/MediaImage.jsx'
+import { MediaImage } from 'common/media'
 
 test('<MediaImage /> should render', () => {
   const mediaImage = shallow(<MediaImage imgAlt='alt' imgSrc='src' />)

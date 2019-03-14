@@ -2,7 +2,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { Media } from '../../../../../src/assets/components/common/media/Media.jsx'
+import { Media } from 'common/media'
 
 describe('<Media />', () => {
   test('should render w/o content', () => {

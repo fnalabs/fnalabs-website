@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Tile } from '../../common'
+import { Container, Tile } from 'common'
 
 export const HowWeWork = () => (
   <section className='section'>

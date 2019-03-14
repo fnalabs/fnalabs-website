@@ -6,7 +6,7 @@ import ReactGA from 'react-ga'
 import { ProjectHero } from './ProjectHero.jsx'
 import { ProjectTiles } from './ProjectTiles.jsx'
 
-import meta from '../../../metadata.json'
+import meta from 'metadata.json'
 
 export default class Projects extends Component {
   componentDidMount () {

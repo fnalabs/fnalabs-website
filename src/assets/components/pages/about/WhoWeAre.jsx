@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { AnalyticsLink, Container, Tile } from '../../common'
-import { Card, CardContent, CardFooter } from '../../common/card'
-import { Media, MediaImage, MediaContent } from '../../common/media'
+import { AnalyticsLink, Container, Tile } from 'common'
+import { Card, CardContent, CardFooter } from 'common/card'
+import { Media, MediaImage, MediaContent } from 'common/media'
 
 const imgAdam = 'https://fnalabs.github.io/fnalabs-assets/assets/fnalabs/adam.96x96.png'
 const imgFelicia = 'https://fnalabs.github.io/fnalabs-assets/assets/fnalabs/felicia.96x96.png'

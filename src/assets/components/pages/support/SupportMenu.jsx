@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AnalyticsLink, Container } from '../../common'
+import { AnalyticsLink, Container } from 'common'
 
 export const SupportMenu = () => (
   <section className='section'>

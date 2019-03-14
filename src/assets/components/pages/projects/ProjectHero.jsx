@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { AnalyticsLink, Container, Tile } from '../../common'
-import { Hero, HeroBody } from '../../common/hero'
+import { AnalyticsLink, Container, Tile } from 'common'
+import { Hero, HeroBody } from 'common/hero'
 
 export const ProjectHero = () => (
   <Hero size='medium' color='light' bold>

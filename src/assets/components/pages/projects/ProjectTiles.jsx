@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AnalyticsLink, Container, Tile } from '../../common'
+import { AnalyticsLink, Container, Tile } from 'common'
 
 export const ProjectTiles = () => (
   <section className='section'>

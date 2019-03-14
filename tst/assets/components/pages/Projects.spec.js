@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
 
-import Projects from '../../../../src/assets/components/pages/projects/Projects.jsx'
+import { Projects } from 'pages'
 
 jest.mock('react-ga')
 

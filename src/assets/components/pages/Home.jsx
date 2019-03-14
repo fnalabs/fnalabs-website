@@ -3,10 +3,10 @@ import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
 
-import { AnalyticsLink, Container, Tile } from '../common'
-import { Hero, HeroBody } from '../common/hero'
+import { AnalyticsLink, Container, Tile } from 'common'
+import { Hero, HeroBody } from 'common/hero'
 
-import meta from '../../metadata.json'
+import meta from 'metadata.json'
 
 export default class Home extends Component {
   componentDidMount () {

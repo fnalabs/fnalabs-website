@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Link, NavLink } from 'react-router-dom'
 
-import { Container } from '../common'
+import { Container } from 'common'
 
 class Nav extends Component {
   constructor (props) {

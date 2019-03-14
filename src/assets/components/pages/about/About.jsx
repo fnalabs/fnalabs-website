@@ -7,7 +7,7 @@ import { AboutHero } from './AboutHero.jsx'
 import { WhoWeAre } from './WhoWeAre.jsx'
 import { HowWeWork } from './HowWeWork.jsx'
 
-import meta from '../../../metadata.json'
+import meta from 'metadata.json'
 
 export default class About extends Component {
   componentDidMount () {

@@ -6,7 +6,7 @@ import ReactGA from 'react-ga'
 import { SupportHero } from './SupportHero.jsx'
 import { SupportMenu } from './SupportMenu.jsx'
 
-import meta from '../../../metadata.json'
+import meta from 'metadata.json'
 
 export default class Projects extends Component {
   componentDidMount () {

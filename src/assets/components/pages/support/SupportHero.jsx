@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Container, Tile } from '../../common'
-import { Hero, HeroBody } from '../../common/hero'
+import { Container, Tile } from 'common'
+import { Hero, HeroBody } from 'common/hero'
 
 export const SupportHero = () => (
   <Hero color='light' className='has-nav-spacing' bold>

@@ -2,7 +2,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import MediaContent from '../../../../../src/assets/components/common/media/MediaContent.jsx'
+import { MediaContent } from 'common/media'
 
 test('<MediaContent /> should render', () => {
   const mediaContent = shallow(<MediaContent title='test' subtitle='subtest' />)

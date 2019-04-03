@@ -2,6 +2,7 @@ import React from 'react'
 
 import { AnalyticsLink, Container, Tile } from 'common'
 import { Hero, HeroBody } from 'common/hero'
+import { HiveIO } from 'icons'
 
 export const ProjectHero = () => (
   <Hero size='medium' color='light' bold>
@@ -13,7 +14,7 @@ export const ProjectHero = () => (
             <Tile type='ancestor'>
               <Tile type='parent' size={3}>
                 <Tile type='child' centered>
-                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 117.31758 135.46667' style={{ marginTop: 12 }}><path d='m 58.658792,6.7627869 52.802038,30.4852731 0,60.970543 L 58.658789,128.70387 5.8567507,98.2186 l 1.7e-6,-60.970543 z' fill='none' stroke='#daa520' strokeWidth='12' /></svg>
+                  <HiveIO style={{ marginTop: 12 }} />
                 </Tile>
               </Tile>
 

@@ -5,6 +5,7 @@ import ReactGA from 'react-ga'
 
 import { AnalyticsLink, Container, Tile } from 'common'
 import { Hero, HeroBody } from 'common/hero'
+import { HiveIO } from 'icons'
 
 import meta from 'metadata.json'
 
@@ -40,7 +41,7 @@ export default class Home extends Component {
                 <Tile type='parent'>
                   <Tile type='child' size={6} vertical centered>
                     <h1 className='title'>
-                      <svg className='svg-inline' height='72' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 117.31758 135.46667'><path d='m 58.658792,6.7627869 52.802038,30.4852731 0,60.970543 L 58.658789,128.70387 5.8567507,98.2186 l 1.7e-6,-60.970543 z' fill='none' stroke='#daa520' strokeWidth='12' /></svg>
+                      <HiveIO className='svg-inline' height='72' />
                       Hive<sup>io</sup>
                     </h1>
                     <h2 className='subtitle'>A reactive, cloud-native framework for building RESTful microservices.</h2>

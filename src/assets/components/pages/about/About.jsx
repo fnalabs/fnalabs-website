@@ -3,9 +3,9 @@ import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
 
-import { AboutHero } from './AboutHero.jsx'
-import { WhoWeAre } from './WhoWeAre.jsx'
-import { HowWeWork } from './HowWeWork.jsx'
+import { AboutHero } from './AboutHero'
+import { WhoWeAre } from './WhoWeAre'
+import { HowWeWork } from './HowWeWork'
 
 import meta from 'metadata.json'
 

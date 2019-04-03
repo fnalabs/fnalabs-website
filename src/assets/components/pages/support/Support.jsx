@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
 
-import { SupportHero } from './SupportHero.jsx'
-import { SupportMenu } from './SupportMenu.jsx'
+import { SupportHero } from './SupportHero'
+import { SupportMenu } from './SupportMenu'
 
 import meta from 'metadata.json'
 

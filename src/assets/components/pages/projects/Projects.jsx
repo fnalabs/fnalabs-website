@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
 
-import { ProjectHero } from './ProjectHero.jsx'
-import { ProjectTiles } from './ProjectTiles.jsx'
+import { ProjectHero } from './ProjectHero'
+import { ProjectTiles } from './ProjectTiles'
 
 import meta from 'metadata.json'
 

@@ -1,3 +1,3 @@
-export { Media } from './Media.jsx'
-export { default as MediaImage } from './MediaImage.jsx'
-export { default as MediaContent } from './MediaContent.jsx'
+export { Media } from './Media'
+export { default as MediaImage } from './MediaImage'
+export { default as MediaContent } from './MediaContent'

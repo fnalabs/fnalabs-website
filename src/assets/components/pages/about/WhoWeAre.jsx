@@ -58,7 +58,7 @@ export const WhoWeAre = () => (
                       <span className='icon'><LinkedIn /></span>
                     </AnalyticsLink>
                     <AnalyticsLink to='https://github.com/aeilers' className='card-footer-item'>
-                      <span className='icon'><Github /></span>
+                      <span className='icon'><Github className='svg-inline' /></span>
                     </AnalyticsLink>
                   </CardFooter>
                 </Card>

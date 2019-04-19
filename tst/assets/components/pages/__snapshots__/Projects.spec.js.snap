@@ -116,7 +116,7 @@ Array [
           <h2
             className="title"
           >
-            More Projects...
+            More Projects
           </h2>
           <div
             className="tile is-ancestor is-vertical"
@@ -413,7 +413,7 @@ Array [
           <h2
             className="title"
           >
-            More Projects...
+            More Projects
           </h2>
           <div
             className="tile is-ancestor is-vertical"

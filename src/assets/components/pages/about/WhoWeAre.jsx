@@ -13,7 +13,7 @@ export const WhoWeAre = () => (
     <Container>
       <div className='columns'>
         <div className='column is-10-desktop is-offset-1-desktop'>
-          <h2 className='title'>Who We Are...</h2>
+          <h2 className='title'>Who We Are</h2>
 
           <Tile type='ancestor'>
             <Tile type='parent'>

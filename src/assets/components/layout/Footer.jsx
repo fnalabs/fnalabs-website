@@ -21,15 +21,15 @@ export const Footer = () => (
             <nav className='column is-6 has-text-right content'>
               <p><strong>Sitemap</strong></p>
               <p><Link to='/'>Home</Link></p>
-              <p><Link to='/projects'>Projects</Link></p>
-              <p><Link to='/about'>About</Link></p>
-              <p><Link to='/support'>Support</Link></p>
+              <p><Link to='/projects/'>Projects</Link></p>
+              <p><Link to='/about/'>About</Link></p>
+              <p><Link to='/support/'>Support</Link></p>
             </nav>
 
             <nav className='column is-6 has-text-left content'>
               <p><strong>Policies</strong></p>
-              <p><Link to='/cookie'>Cookie</Link></p>
-              <p><Link to='/privacy'>Privacy</Link></p>
+              <p><Link to='/cookie/'>Cookie</Link></p>
+              <p><Link to='/privacy/'>Privacy</Link></p>
             </nav>
           </div>
         </div>

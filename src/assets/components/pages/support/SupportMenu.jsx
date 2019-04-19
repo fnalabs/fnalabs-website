@@ -7,7 +7,7 @@ export const SupportMenu = () => (
     <Container>
       <div className='columns'>
         <div className='column is-10-desktop is-offset-1-desktop'>
-          <h2 className='title'>Support Links...</h2>
+          <h2 className='title'>Support Links</h2>
 
           <div className='columns'>
             <div className='column' />

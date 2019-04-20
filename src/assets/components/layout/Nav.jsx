@@ -30,7 +30,7 @@ class Nav extends Component {
 
   render () {
     let navClasses = 'navbar is-spaced is-transparent is-absolute'
-    if (this.state.location !== '/cookie' && this.state.location !== '/privacy') {
+    if (this.state.location !== '/cookie/' && this.state.location !== '/privacy/') {
       navClasses += ' is-bold'
     }
 
@@ -49,9 +49,9 @@ class Nav extends Component {
 
           <div className={`navbar-menu${this.state.closed ? '' : ' is-active'}`}>
             <div className='navbar-end'>
-              <NavLink to='/projects' activeClassName='is-active' className='navbar-item'>Projects</NavLink>
-              <NavLink to='/about' activeClassName='is-active' className='navbar-item'>About</NavLink>
-              <NavLink to='/support' activeClassName='is-active' className='navbar-item'>Support</NavLink>
+              <NavLink to='/projects/' activeClassName='is-active' className='navbar-item'>Projects</NavLink>
+              <NavLink to='/about/' activeClassName='is-active' className='navbar-item'>About</NavLink>
+              <NavLink to='/support/' activeClassName='is-active' className='navbar-item'>Support</NavLink>
             </div>
           </div>
         </Container>

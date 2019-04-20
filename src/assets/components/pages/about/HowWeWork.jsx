@@ -8,7 +8,7 @@ export const HowWeWork = () => (
     <Container>
       <div className='columns'>
         <div className='column is-10-desktop is-offset-1-desktop'>
-          <h2 className='title'>How We Work...</h2>
+          <h2 className='title'>How We Work</h2>
           <p className='subtitle'>The <strong>Four Paramounts</strong> are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Four Paramounts from beginning to end is our way of certifying the products we create.</p>
 
           <Tile type='ancestor' vertical>

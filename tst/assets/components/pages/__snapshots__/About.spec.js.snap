@@ -89,7 +89,7 @@ Array [
           <h2
             className="title"
           >
-            Who We Are...
+            Who We Are
           </h2>
           <div
             className="tile is-ancestor"
@@ -282,7 +282,7 @@ Array [
           <h2
             className="title"
           >
-            How We Work...
+            How We Work
           </h2>
           <p
             className="subtitle"
@@ -539,7 +539,7 @@ Array [
           <h2
             className="title"
           >
-            Who We Are...
+            Who We Are
           </h2>
           <div
             className="tile is-ancestor"
@@ -732,7 +732,7 @@ Array [
           <h2
             className="title"
           >
-            How We Work...
+            How We Work
           </h2>
           <p
             className="subtitle"

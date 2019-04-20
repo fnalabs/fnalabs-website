@@ -7,7 +7,7 @@ export const ProjectTiles = () => (
     <Container>
       <div className='columns'>
         <div className='column is-10-desktop is-offset-1-desktop'>
-          <h2 className='title'>More Projects...</h2>
+          <h2 className='title'>More Projects</h2>
 
           <Tile type='ancestor' vertical>
             <Tile type='parent' className='is-paddingless'>

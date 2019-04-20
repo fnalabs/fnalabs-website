@@ -70,7 +70,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             </p>
             <p>
               <a
-                href="/projects"
+                href="/projects/"
                 onClick={[Function]}
               >
                 Projects
@@ -78,7 +78,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             </p>
             <p>
               <a
-                href="/about"
+                href="/about/"
                 onClick={[Function]}
               >
                 About
@@ -86,7 +86,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             </p>
             <p>
               <a
-                href="/support"
+                href="/support/"
                 onClick={[Function]}
               >
                 Support
@@ -103,7 +103,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             </p>
             <p>
               <a
-                href="/cookie"
+                href="/cookie/"
                 onClick={[Function]}
               >
                 Cookie
@@ -111,7 +111,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             </p>
             <p>
               <a
-                href="/privacy"
+                href="/privacy/"
                 onClick={[Function]}
               >
                 Privacy

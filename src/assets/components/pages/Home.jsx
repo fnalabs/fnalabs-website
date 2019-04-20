@@ -7,7 +7,7 @@ import { AnalyticsLink, Container, Tile } from 'common'
 import { Hero, HeroBody } from 'common/hero'
 import { HiveIO } from 'icons'
 
-import meta from 'metadata.json'
+import meta from 'metadata'
 
 export default class Home extends Component {
   componentDidMount () {

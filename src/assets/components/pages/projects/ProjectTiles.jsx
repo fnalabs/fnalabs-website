@@ -21,7 +21,7 @@ export const ProjectTiles = () => (
                   </Tile>
 
                   <Tile type='child'>
-                    <AnalyticsLink to='https://fnalabs.github.io/model-json-js/' target='_blank' className='button is-link'>Learn More</AnalyticsLink>
+                    <AnalyticsLink to='https://fnalabs.github.io/model-json-js/' target='_blank' rel='noopener noreferrer' className='button is-link'>Learn More</AnalyticsLink>
                   </Tile>
                 </Tile>
               </Tile>
@@ -36,7 +36,7 @@ export const ProjectTiles = () => (
                   </Tile>
 
                   <Tile type='child'>
-                    <AnalyticsLink to='https://fnalabs.github.io/schema-json-js/' target='_blank' className='button is-link'>Learn More</AnalyticsLink>
+                    <AnalyticsLink to='https://fnalabs.github.io/schema-json-js/' target='_blank' rel='noopener noreferrer' className='button is-link'>Learn More</AnalyticsLink>
                   </Tile>
                 </Tile>
               </Tile>
@@ -53,7 +53,7 @@ export const ProjectTiles = () => (
                   </Tile>
 
                   <Tile type='child'>
-                    <AnalyticsLink to='https://fnalabs.github.io/test-automation/' target='_blank' className='button is-link'>Learn More</AnalyticsLink>
+                    <AnalyticsLink to='https://fnalabs.github.io/test-automation/' target='_blank' rel='noopener noreferrer' className='button is-link'>Learn More</AnalyticsLink>
                   </Tile>
                 </Tile>
               </Tile>

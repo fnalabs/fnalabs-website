@@ -28,7 +28,7 @@ export const ProjectHero = () => (
                 </Tile>
 
                 <Tile type='child'>
-                  <AnalyticsLink to='https://hiveframework.io' target='_blank' className='button is-success'>Release Candidate 3</AnalyticsLink>
+                  <AnalyticsLink to='https://hiveframework.io' target='_blank' rel='noopener noreferrer' className='button is-success'>Release Candidate 2</AnalyticsLink>
                 </Tile>
               </Tile>
             </Tile>

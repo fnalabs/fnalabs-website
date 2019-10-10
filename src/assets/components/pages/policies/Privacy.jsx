@@ -67,7 +67,7 @@ export const Privacy = () => {
             <li><p>Google Analytics</p></li>
           </ul>
           <p>*You may choose to Opt-out of Google Analytics at any time by clicking the link below and then following further instructions.<br />
-            <a href='https://tools.google.com/dlpage/gaoptout'>Google Analytics Opt-out Browser Add-on</a>
+            <a href='https://tools.google.com/dlpage/gaoptout' target='_blank' rel='noopener noreferrer'>Google Analytics Opt-out Browser Add-on</a>
           </p>
 
           <p><strong>Article 7 - HOW INFORMATION IS USED</strong>:</p>

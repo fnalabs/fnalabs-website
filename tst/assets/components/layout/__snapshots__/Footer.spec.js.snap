@@ -22,12 +22,16 @@ exports[`<Footer /> should render static content correctly 1`] = `
           Icons from 
           <a
             href="https://fontawesome.com/"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Font Awesome
           </a>
            (
           <a
             href="https://fontawesome.com/license"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             License
           </a>
@@ -36,6 +40,8 @@ exports[`<Footer /> should render static content correctly 1`] = `
         <p>
           <a
             href="https://bulma.io"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <img
               alt="Made with Bulma"
@@ -131,6 +137,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
           >
             <a
               href="https://github.com/fnalabs"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <span
@@ -153,6 +160,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
           >
             <a
               href="https://www.npmjs.com/org/fnalabs"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <span
@@ -175,6 +183,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
           >
             <a
               href="https://twitter.com/FnA_Labs"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <span

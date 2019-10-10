@@ -12,7 +12,7 @@ export default class Hero extends Component {
   render () {
     const { bold, children, className, color, size } = this.props
 
-    let classes = `hero`
+    let classes = 'hero'
     if (size) classes += ` is-${size}`
     if (color) classes += ` is-${color}`
     if (bold) classes += ' is-bold'

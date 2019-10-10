@@ -91,7 +91,7 @@ Array [
                     href="https://hiveframework.io"
                     target="_blank"
                   >
-                    Release Candidate 2
+                    Release Candidate 3
                   </a>
                 </div>
               </div>
@@ -137,13 +137,13 @@ Array [
                       className="content"
                     >
                       <h3>
-                        model(JSON)
+                        Model(JSON)
                         <sup>
                           js
                         </sup>
                       </h3>
                       <p>
-                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the services/apps you build or across networks. It can represent data Models as either immutable or not and uses schema validation with Schema(JSON)
                         <sup>
                           js
                         </sup>
@@ -155,11 +155,11 @@ Array [
                     className="tile is-child"
                   >
                     <a
-                      className="button is-warning"
+                      className="button is-link"
                       href="https://fnalabs.github.io/model-json-js/"
                       target="_blank"
                     >
-                      Coming Soon
+                      Learn More
                     </a>
                   </div>
                 </div>
@@ -177,13 +177,13 @@ Array [
                       className="content"
                     >
                       <h3>
-                        schema(JSON)
+                        Schema(JSON)
                         <sup>
                           js
                         </sup>
                       </h3>
                       <p>
-                        Our JSON Schema validator is a data structure schema validator based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Promises and Thunks for complex data structures.
+                        Our JSON Schema project is a Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.
                       </p>
                     </article>
                   </div>
@@ -388,7 +388,7 @@ Array [
                     href="https://hiveframework.io"
                     target="_blank"
                   >
-                    Release Candidate 2
+                    Release Candidate 3
                   </a>
                 </div>
               </div>
@@ -434,13 +434,13 @@ Array [
                       className="content"
                     >
                       <h3>
-                        model(JSON)
+                        Model(JSON)
                         <sup>
                           js
                         </sup>
                       </h3>
                       <p>
-                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)
+                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the services/apps you build or across networks. It can represent data Models as either immutable or not and uses schema validation with Schema(JSON)
                         <sup>
                           js
                         </sup>
@@ -452,11 +452,11 @@ Array [
                     className="tile is-child"
                   >
                     <a
-                      className="button is-warning"
+                      className="button is-link"
                       href="https://fnalabs.github.io/model-json-js/"
                       target="_blank"
                     >
-                      Coming Soon
+                      Learn More
                     </a>
                   </div>
                 </div>
@@ -474,13 +474,13 @@ Array [
                       className="content"
                     >
                       <h3>
-                        schema(JSON)
+                        Schema(JSON)
                         <sup>
                           js
                         </sup>
                       </h3>
                       <p>
-                        Our JSON Schema validator is a data structure schema validator based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Promises and Thunks for complex data structures.
+                        Our JSON Schema project is a Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.
                       </p>
                     </article>
                   </div>

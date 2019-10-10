@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
@@ -11,17 +11,17 @@ import meta from 'metadata'
 export default class Projects extends Component {
   componentDidMount () {
     if (Cookies.get('CookieConsent')) {
-      const title = `${meta['/projects/'].title} | ${meta.common.siteName}`
+      const title = `${meta['/projects'].title} | ${meta.common.siteName}`
       ReactGA.pageview(this.props.location.pathname, undefined, title)
     }
   }
 
   render () {
-    const { title, description, url } = meta['/projects/']
+    const { title, description, url } = meta['/projects']
     const siteName = meta.common.siteName
 
     return (
-      <Fragment>
+      <>
         <Helmet>
           <title>{title} | {siteName}</title>
           <meta name='description' content={description} />
@@ -37,7 +37,7 @@ export default class Projects extends Component {
         <ProjectHero />
         <ProjectTiles />
 
-      </Fragment>
+      </>
     )
   }
 }

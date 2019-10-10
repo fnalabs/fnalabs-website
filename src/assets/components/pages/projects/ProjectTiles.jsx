@@ -15,13 +15,13 @@ export const ProjectTiles = () => (
                 <Tile type='child' className='box' vertical>
                   <Tile type='child'>
                     <article className='content'>
-                      <h3>model(JSON)<sup>js</sup></h3>
-                      <p>Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the systems you build or across networks. It can represent data Models as either immutable or not and uses schema validation with schema(JSON)<sup>js</sup>.</p>
+                      <h3>Model(JSON)<sup>js</sup></h3>
+                      <p>Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the services/apps you build or across networks. It can represent data Models as either immutable or not and uses schema validation with Schema(JSON)<sup>js</sup>.</p>
                     </article>
                   </Tile>
 
                   <Tile type='child'>
-                    <AnalyticsLink to='https://fnalabs.github.io/model-json-js/' target='_blank' className='button is-warning'>Coming Soon</AnalyticsLink>
+                    <AnalyticsLink to='https://fnalabs.github.io/model-json-js/' target='_blank' className='button is-link'>Learn More</AnalyticsLink>
                   </Tile>
                 </Tile>
               </Tile>
@@ -30,8 +30,8 @@ export const ProjectTiles = () => (
                 <Tile type='child' className='box' vertical>
                   <Tile type='child'>
                     <article className='content'>
-                      <h3>schema(JSON)<sup>js</sup></h3>
-                      <p>Our JSON Schema validator is a data structure schema validator based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Promises and Thunks for complex data structures.</p>
+                      <h3>Schema(JSON)<sup>js</sup></h3>
+                      <p>Our JSON Schema project is a Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.</p>
                     </article>
                   </Tile>
 

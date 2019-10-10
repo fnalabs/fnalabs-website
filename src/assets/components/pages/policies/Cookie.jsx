@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
@@ -7,11 +7,11 @@ import { Container } from 'common'
 import meta from 'metadata'
 
 export const Cookie = () => {
-  const { title, url } = meta['/cookie/']
+  const { title, url } = meta['/cookie']
   const siteName = meta.common.siteName
 
   return (
-    <Fragment>
+    <>
       <Helmet>
         <title>{title} | {siteName}</title>
 
@@ -64,6 +64,6 @@ export const Cookie = () => {
           </ul>
         </Container>
       </article>
-    </Fragment>
+    </>
   )
 }

@@ -15,7 +15,7 @@ class Nav extends Component {
     }
   }
 
-  toggleMenu = () => {
+  handleToggleMenu = () => {
     this.setState({ closed: !this.state.closed })
   }
 
@@ -40,7 +40,7 @@ class Nav extends Component {
           <div className='navbar-brand'>
             <Link to='/' className='navbar-item'><FnALabs /></Link>
 
-            <div className={`navbar-burger${this.state.closed ? '' : ' is-active'}`} onClick={this.toggleMenu}>
+            <div className={`navbar-burger${this.state.closed ? '' : ' is-active'}`} onClick={this.handleToggleMenu}>
               <span />
               <span />
               <span />
@@ -49,9 +49,9 @@ class Nav extends Component {
 
           <div className={`navbar-menu${this.state.closed ? '' : ' is-active'}`}>
             <div className='navbar-end'>
-              <NavLink to='/projects/' activeClassName='is-active' className='navbar-item'>Projects</NavLink>
-              <NavLink to='/about/' activeClassName='is-active' className='navbar-item'>About</NavLink>
-              <NavLink to='/support/' activeClassName='is-active' className='navbar-item'>Support</NavLink>
+              <NavLink to='/projects' activeClassName='is-active' className='navbar-item'>Projects</NavLink>
+              <NavLink to='/about' activeClassName='is-active' className='navbar-item'>About</NavLink>
+              <NavLink to='/support' activeClassName='is-active' className='navbar-item'>Support</NavLink>
             </div>
           </div>
         </Container>

@@ -48,6 +48,7 @@ exports[`<Home /> should render homepage static content 1`] = `
             <a
               className="button is-link"
               href="https://hiveframework.io"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Learn More
@@ -158,6 +159,7 @@ exports[`<Home /> should render homepage static content and report page view 1`]
             <a
               className="button is-link"
               href="https://hiveframework.io"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Learn More

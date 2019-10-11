@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
@@ -21,7 +21,7 @@ export default class Home extends Component {
     const siteName = meta.common.siteName
 
     return (
-      <Fragment>
+      <>
         <Helmet>
           <title>{siteName}</title>
           <meta name='description' content={description} />
@@ -45,7 +45,7 @@ export default class Home extends Component {
                       Hive<sup>io</sup>
                     </h1>
                     <h2 className='subtitle'>A reactive, cloud-native framework for building RESTful microservices.</h2>
-                    <AnalyticsLink to='https://hiveframework.io' className='button is-link' target='_blank'>Learn More</AnalyticsLink>
+                    <AnalyticsLink to='https://hiveframework.io' className='button is-link' target='_blank' rel='noopener noreferrer'>Learn More</AnalyticsLink>
                   </Tile>
 
                   <Tile type='child' size={6}>
@@ -73,7 +73,7 @@ export default class Home extends Component {
             </Container>
           </HeroBody>
         </Hero>
-      </Fragment>
+      </>
     )
   }
 }

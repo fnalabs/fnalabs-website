@@ -64,7 +64,7 @@ exports[`<Nav /> should render About page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
         >
           Projects
@@ -72,7 +72,7 @@ exports[`<Nav /> should render About page nav correctly 1`] = `
         <a
           aria-current="page"
           className="navbar-item is-active"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
           style={Object {}}
         >
@@ -81,7 +81,7 @@ exports[`<Nav /> should render About page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
         >
           Support
@@ -156,7 +156,7 @@ exports[`<Nav /> should render Cookie Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
         >
           Projects
@@ -164,7 +164,7 @@ exports[`<Nav /> should render Cookie Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -172,7 +172,7 @@ exports[`<Nav /> should render Cookie Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
         >
           Support
@@ -247,7 +247,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
         >
           Projects
@@ -255,7 +255,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -263,7 +263,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
         >
           Support
@@ -338,7 +338,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
         <a
           aria-current="page"
           className="navbar-item is-active"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
           style={Object {}}
         >
@@ -347,7 +347,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -355,7 +355,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
         >
           Support
@@ -430,7 +430,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
         >
           Projects
@@ -438,7 +438,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -446,7 +446,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
         <a
           aria-current="page"
           className="navbar-item is-active"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
           style={Object {}}
         >
@@ -522,7 +522,7 @@ exports[`<Nav /> should render homepage nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/projects/"
+          href="/projects"
           onClick={[Function]}
         >
           Projects
@@ -530,7 +530,7 @@ exports[`<Nav /> should render homepage nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/about/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -538,7 +538,7 @@ exports[`<Nav /> should render homepage nav correctly 1`] = `
         <a
           aria-current={null}
           className="navbar-item"
-          href="/support/"
+          href="/support"
           onClick={[Function]}
         >
           Support

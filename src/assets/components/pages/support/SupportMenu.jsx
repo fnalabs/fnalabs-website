@@ -31,15 +31,15 @@ export const SupportMenu = () => (
                     </ul>
                   </li>
                   <li>
-                    <a className='menu-label-sub'>RESTful Container</a>
+                    <a className='menu-label-sub'>Base image</a>
                     <ul>
-                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-rest-js/'>Docker</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-rest-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-rest-js/issues'>Issues</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-base-js/'>Docker</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-base-js'>Github</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-base-js/issues'>Issues</AnalyticsLink></li>
                     </ul>
                   </li>
                   <li>
-                    <a className='menu-label-sub'>Producer Container</a>
+                    <a className='menu-label-sub'>Producer image</a>
                     <ul>
                       <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-producer-js/'>Docker</AnalyticsLink></li>
                       <li><AnalyticsLink to='https://github.com/fnalabs/hive-producer-js'>Github</AnalyticsLink></li>
@@ -47,7 +47,7 @@ export const SupportMenu = () => (
                     </ul>
                   </li>
                   <li>
-                    <a className='menu-label-sub'>Consumer Container</a>
+                    <a className='menu-label-sub'>Consumer image</a>
                     <ul>
                       <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-consumer-js/'>Docker</AnalyticsLink></li>
                       <li><AnalyticsLink to='https://github.com/fnalabs/hive-consumer-js'>Github</AnalyticsLink></li>
@@ -55,7 +55,7 @@ export const SupportMenu = () => (
                     </ul>
                   </li>
                   <li>
-                    <a className='menu-label-sub'>Stream Processor Container</a>
+                    <a className='menu-label-sub'>Stream Processor image</a>
                     <ul>
                       <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-stream-processor-js/'>Docker</AnalyticsLink></li>
                       <li><AnalyticsLink to='https://github.com/fnalabs/hive-stream-processor-js'>Github</AnalyticsLink></li>
@@ -72,7 +72,7 @@ export const SupportMenu = () => (
               <h4 className='subtitle'>More Projects</h4>
               <nav className='menu'>
 
-                <p className='menu-label'>model(JSON)<sup>js</sup></p>
+                <p className='menu-label'>Model(JSON)<sup>js</sup></p>
                 <ul className='menu-list'>
                   <li><AnalyticsLink to='https://fnalabs.github.io/model-json-js/'>Documentation</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://www.npmjs.com/package/model-json-js'>NPM</AnalyticsLink></li>
@@ -80,7 +80,7 @@ export const SupportMenu = () => (
                   <li><AnalyticsLink to='https://github.com/fnalabs/model-json-js/issues'>Issues</AnalyticsLink></li>
                 </ul>
 
-                <p className='menu-label'>schema(JSON)<sup>js</sup></p>
+                <p className='menu-label'>Schema(JSON)<sup>js</sup></p>
                 <ul className='menu-list'>
                   <li><AnalyticsLink to='https://fnalabs.github.io/schema-json-js/'>Documentation</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://www.npmjs.com/package/schema-json-js'>NPM</AnalyticsLink></li>
@@ -100,7 +100,7 @@ export const SupportMenu = () => (
                     </ul>
                   </li>
                   <li>
-                    <a className='menu-label-sub'>Test Container</a>
+                    <a className='menu-label-sub'>Test image</a>
                     <ul>
                       <li><AnalyticsLink to='https://github.com/fnalabs/test-automation-starter'>Starter Kit</AnalyticsLink></li>
                       <li><AnalyticsLink to='https://github.com/fnalabs/test-automation-starter/issues'>Issues</AnalyticsLink></li>
@@ -111,8 +111,8 @@ export const SupportMenu = () => (
                 <p className='menu-label'>Starter Kits</p>
                 <ul className='menu-list'>
                   <li><AnalyticsLink to='https://github.com/fnalabs/starter-npm-js'>NPM package</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React/Koa2 SSR webapp</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 REST service</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React SSR PWA</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 service</AnalyticsLink></li>
                 </ul>
               </nav>
 

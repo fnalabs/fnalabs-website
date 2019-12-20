@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
+
+import Consent from 'contexts/Consent'
 
 import { AboutHero } from './AboutHero'
 import { WhoWeAre } from './WhoWeAre'
@@ -10,9 +11,11 @@ import { HowWeWork } from './HowWeWork'
 import meta from 'metadata'
 
 export default class About extends Component {
+  static contextType = Consent
+
   componentDidMount () {
-    if (Cookies.get('CookieConsent')) {
-      const title = `${meta['/about'].title} | ${meta.common.siteName}`
+    if (this.context.isConsent) {
+      const title = `${meta.common.siteName} | ${meta['/about'].title}`
       ReactGA.pageview(this.props.location.pathname, undefined, title)
     }
   }
@@ -24,7 +27,7 @@ export default class About extends Component {
     return (
       <>
         <Helmet>
-          <title>{title} | {siteName}</title>
+          <title>{siteName} | {title}</title>
           <meta name='description' content={description} />
           <link rel='canonical' href={url} />
 

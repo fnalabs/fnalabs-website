@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
@@ -6,17 +7,27 @@ import ReactGA from 'react-ga'
 
 import { Provider } from 'contexts/Consent'
 
-import meta from 'metadata.json'
+import meta from 'metadata'
 
 class Transition extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      isConsent: Cookies.get('CookieConsent') || false
-    }
+    this.state = { isConsent: this.isConsent }
 
     ReactGA.initialize(process.env.GA_ID)
+    ReactGA.set({ dimension1: 'online' })
+  }
+
+  get isConsent () {
+    return (Cookies.get('CookieConsent') === 'true' ||
+      sessionStorage?.getItem('CookieConsent') === 'true') ??
+      false
+  }
+
+  set isConsent (isConsent) {
+    sessionStorage?.setItem('CookieConsent', String(isConsent)) // eslint-disable-line
+    this.setState({ isConsent })
   }
 
   handleOnAccept = () => {
@@ -26,17 +37,17 @@ class Transition extends Component {
       : meta.common.siteName
 
     ReactGA.pageview(this.props.location.pathname, undefined, title)
-    this.setState({ isConsent: true })
+    this.isConsent = true
   }
 
-  static getDerivedStateFromProps (props, state) {
-    if (Cookies.get('CookieConsent')) return { isConsent: true }
-    else return null
+  handleOnDecline = () => {
+    if (Cookies.get('CookieConsent') === 'true') Cookies.set('CookieConsent', 'false')
+    this.isConsent = false
   }
 
   componentDidUpdate (prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      window.scrollTo(0, 0)
+      scrollTo(0, 0)
     }
   }
 
@@ -48,13 +59,18 @@ class Transition extends Component {
         {!this.state.isConsent &&
           <CookieConsent
             disableStyles
-            buttonText='I Accept'
-            buttonClasses='button is-pulled-right'
+            enableDeclineButton
+            flipButtons
+            buttonText='Accept'
+            declineButtonText='Decline'
+            buttonClasses='button is-small is-pulled-right is-dark'
+            declineButtonClasses='button is-small is-pulled-right is-light'
             containerClasses='notification'
             contentClasses='is-inline-block'
             onAccept={this.handleOnAccept}
+            onDecline={this.handleOnDecline}
           >
-            FnA Labs uses cookies to provide you the best experience. By clicking <strong>I Accept</strong> you are agreeing to our <Link to='/cookie'>Cookie</Link> and <Link to='/privacy'>Privacy</Link> Policies.
+            FnA Labs uses cookies to provide you the best experience. By clicking <strong>Accept</strong> you are agreeing to our <Link to='/cookie'>Cookie</Link> and <Link to='/privacy'>Privacy</Link> policies.
           </CookieConsent>}
       </Provider>
     )

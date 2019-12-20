@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import { Cookies } from 'react-cookie-consent'
 import ReactGA from 'react-ga'
+
+import Consent from 'contexts/Consent'
 
 import { ProjectHero } from './ProjectHero'
 import { ProjectTiles } from './ProjectTiles'
@@ -9,9 +10,11 @@ import { ProjectTiles } from './ProjectTiles'
 import meta from 'metadata'
 
 export default class Projects extends Component {
+  static contextType = Consent
+
   componentDidMount () {
-    if (Cookies.get('CookieConsent')) {
-      const title = `${meta['/projects'].title} | ${meta.common.siteName}`
+    if (this.context.isConsent) {
+      const title = `${meta.common.siteName} | ${meta['/projects'].title}`
       ReactGA.pageview(this.props.location.pathname, undefined, title)
     }
   }
@@ -23,7 +26,7 @@ export default class Projects extends Component {
     return (
       <>
         <Helmet>
-          <title>{title} | {siteName}</title>
+          <title>{siteName} | {title}</title>
           <meta name='description' content={description} />
           <link rel='canonical' href={url} />
 

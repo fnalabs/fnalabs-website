@@ -1,0 +1,4 @@
+#! /usr/bin/env node
+require('../dist/server')
+
+setTimeout(() => process.exit(), 5000)

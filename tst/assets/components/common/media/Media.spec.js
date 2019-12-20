@@ -5,7 +5,7 @@ import { shallow } from 'enzyme'
 import { Media } from 'common/media'
 
 describe('<Media />', () => {
-  test('should render w/o content', () => {
+  it('should render w/o content', () => {
     const media = shallow(<Media />)
 
     expect(media.instance()).toBeNull()
@@ -13,7 +13,7 @@ describe('<Media />', () => {
     expect(media.hasClass('media')).toBe(true)
   })
 
-  test('should render w/ content', () => {
+  it('should render w/ content', () => {
     const media = shallow(<Media><div>test</div></Media>)
 
     expect(media.contains(<div>test</div>)).toBe(true)

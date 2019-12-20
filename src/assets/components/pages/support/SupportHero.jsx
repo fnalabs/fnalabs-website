@@ -22,7 +22,7 @@ export const SupportHero = () => (
                 <Tile type='child' centeredMobile>
                   <article className='content'>
                     <h1 className='title'>Support</h1>
-                    <h3 className='subtitle'>How can we<br />help you?</h3>
+                    <p>How can we help you?</p>
                   </article>
                 </Tile>
               </Tile>

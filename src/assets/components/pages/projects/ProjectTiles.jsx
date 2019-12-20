@@ -66,8 +66,8 @@ export const ProjectTiles = () => (
                       <p>Over the course of our open source development journey, we've identified common underlying structures in the projects we've built. We decided to abstract those structures as starter kits:</p>
                       <ul>
                         <li><AnalyticsLink to='https://github.com/fnalabs/starter-npm-js'>NPM package</AnalyticsLink></li>
-                        <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React/Koa2 SSR webapp</AnalyticsLink></li>
-                        <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 REST service</AnalyticsLink></li>
+                        <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React SSR PWA</AnalyticsLink></li>
+                        <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 service</AnalyticsLink></li>
                       </ul>
                     </article>
                   </Tile>

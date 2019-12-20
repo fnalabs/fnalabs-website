@@ -233,7 +233,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
               className="tile is-child has-text-centered"
             >
               <svg
-                viewBox="0 0 283.747 180"
+                viewBox="0 0 290 180"
                 width="144"
                 xmlns="http://www.w3.org/2000/svg"
               >

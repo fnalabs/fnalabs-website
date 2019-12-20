@@ -112,7 +112,7 @@ module.exports = [
         short_name: 'FnA',
         orientation: 'any',
         background_color: '#f5f5f5',
-        theme_color: '#00008b',
+        theme_color: '#f5f5f5',
         icons: [
           {
             src: './src/assets/icons/icon_32x32.png',

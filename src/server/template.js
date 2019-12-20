@@ -12,7 +12,6 @@ ${link}
 <link rel="manifest" href="/manifest.json">
 
 <style type="text/css">${style}</style>
-<link rel="preload" href="/${css}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" type="text/css" href="/${css}"></noscript>
 
 <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/icon_512x512.png" />
@@ -28,7 +27,10 @@ ${link}
 
 ${content}
 
-<script>
+<script type="text/javascript">
+document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", '<link rel="stylesheet" type="text/css" href="/${css}">')
+</script>
+<script type="text/javascript">
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js"))
 }

@@ -12,7 +12,8 @@ ${link}
 <link rel="manifest" href="/manifest.json">
 
 <style type="text/css">${style}</style>
-<link rel="stylesheet" type="text/css" href="/${css}">
+<link rel="preload" href="/${css}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" type="text/css" href="/${css}"></noscript>
 
 <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/icon_512x512.png" />
 <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/icon_192x192.png" />

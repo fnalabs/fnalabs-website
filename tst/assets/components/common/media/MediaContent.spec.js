@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 
 import { MediaContent } from 'common/media'
 
-test('<MediaContent /> should render', () => {
+it('<MediaContent /> should render', () => {
   const mediaContent = shallow(<MediaContent title='test' subtitle='subtest' />)
 
   expect(mediaContent.instance()).toBeInstanceOf(MediaContent)

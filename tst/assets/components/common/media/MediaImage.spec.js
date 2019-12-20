@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 
 import { MediaImage } from 'common/media'
 
-test('<MediaImage /> should render', () => {
+it('<MediaImage /> should render', () => {
   const mediaImage = shallow(<MediaImage imgAlt='alt' imgSrc='src' />)
 
   expect(mediaImage.instance()).toBeInstanceOf(MediaImage)

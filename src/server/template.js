@@ -28,9 +28,8 @@ ${link}
 ${content}
 
 <script type="text/javascript">
+// TODO: Replace with link preload solution when support exceeds 90%. https://caniuse.com/#feat=link-rel-preload
 document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", '<link rel="stylesheet" type="text/css" href="/${css}">')
-</script>
-<script type="text/javascript">
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js"))
 }

@@ -1,4 +1,4 @@
-importScripts("fnalabs-manifest.27abcdc4ef11aa28c17734fe5acc0daa.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("fnalabs-manifest.f6eb9d16f4f76b52dccd00b6fdd66722.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-env serviceworker */
 /* global workbox */

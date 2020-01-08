@@ -52,7 +52,9 @@ Array [
                     >
                       Support
                     </h1>
-                    <p>
+                    <p
+                      className="subtitle"
+                    >
                       How can we help you?
                     </p>
                   </article>
@@ -90,11 +92,11 @@ Array [
             <div
               className="column is-narrow"
             >
-              <h4
-                className="subtitle"
+              <h3
+                className="subtitle is-4"
               >
                 Featured Projects
-              </h4>
+              </h3>
               <nav
                 className="menu"
               >
@@ -133,7 +135,7 @@ Array [
                   </li>
                   <li>
                     <a
-                      href="https://fnalabs.github.io/hive-js/"
+                      href="https://hiveframework.io/documentation"
                     >
                       Documentation
                     </a>
@@ -297,11 +299,11 @@ Array [
             <div
               className="column is-narrow"
             >
-              <h4
-                className="subtitle"
+              <h3
+                className="subtitle is-4"
               >
                 More Projects
-              </h4>
+              </h3>
               <nav
                 className="menu"
               >
@@ -485,11 +487,11 @@ Array [
                   </li>
                 </ul>
               </nav>
-              <h4
-                className="subtitle has-nav-spacing"
+              <h3
+                className="subtitle is-4 has-nav-spacing"
               >
                 Contact By Email
-              </h4>
+              </h3>
               <nav
                 className="menu"
               >

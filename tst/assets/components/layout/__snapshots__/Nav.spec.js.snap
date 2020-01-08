@@ -3,7 +3,7 @@
 exports[`<Nav /> should render About page nav correctly 1`] = `
 <nav
   aria-label="main navigation"
-  className="navbar is-spaced is-transparent is-absolute is-bold"
+  className="navbar is-spaced is-transparent is-absolute"
   role="navigation"
 >
   <div
@@ -13,6 +13,7 @@ exports[`<Nav /> should render About page nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}
@@ -105,6 +106,7 @@ exports[`<Nav /> should render Cookie Policy page nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}
@@ -196,6 +198,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}
@@ -277,7 +280,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
 exports[`<Nav /> should render Projects page nav correctly 1`] = `
 <nav
   aria-label="main navigation"
-  className="navbar is-spaced is-transparent is-absolute is-bold"
+  className="navbar is-spaced is-transparent is-absolute"
   role="navigation"
 >
   <div
@@ -287,6 +290,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}
@@ -369,7 +373,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
 exports[`<Nav /> should render Support page nav correctly 1`] = `
 <nav
   aria-label="main navigation"
-  className="navbar is-spaced is-transparent is-absolute is-bold"
+  className="navbar is-spaced is-transparent is-absolute"
   role="navigation"
 >
   <div
@@ -379,6 +383,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}
@@ -461,7 +466,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
 exports[`<Nav /> should render homepage nav correctly 1`] = `
 <nav
   aria-label="main navigation"
-  className="navbar is-spaced is-transparent is-absolute is-bold"
+  className="navbar is-spaced is-transparent is-absolute"
   role="navigation"
 >
   <div
@@ -471,6 +476,7 @@ exports[`<Nav /> should render homepage nav correctly 1`] = `
       className="navbar-brand"
     >
       <a
+        aria-label="home page"
         className="navbar-item"
         href="/"
         onClick={[Function]}

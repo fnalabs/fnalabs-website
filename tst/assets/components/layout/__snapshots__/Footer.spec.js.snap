@@ -7,14 +7,14 @@ exports[`<Footer /> should render static content correctly 1`] = `
   <div
     className="container"
   >
-    <div
+    <nav
       className="columns"
     >
       <div
         className="column is-narrow content"
       >
         <p>
-          Copyright © 2018 FnA Labs
+          Copyright © 2020 FnA Labs
         </p>
         <p
           className="is-size-7"
@@ -58,12 +58,12 @@ exports[`<Footer /> should render static content correctly 1`] = `
         <div
           className="columns is-mobile"
         >
-          <nav
+          <div
             className="column is-6 has-text-right content"
           >
             <p>
               <strong>
-                Sitemap
+                Pages
               </strong>
             </p>
             <p>
@@ -98,8 +98,8 @@ exports[`<Footer /> should render static content correctly 1`] = `
                 Support
               </a>
             </p>
-          </nav>
-          <nav
+          </div>
+          <div
             className="column is-6 has-text-left content"
           >
             <p>
@@ -123,19 +123,20 @@ exports[`<Footer /> should render static content correctly 1`] = `
                 Privacy
               </a>
             </p>
-          </nav>
+          </div>
         </div>
       </div>
       <div
         className="column is-narrow"
       >
-        <nav
+        <div
           className="level is-mobile"
         >
           <div
             className="level-item"
           >
             <a
+              aria-label="github"
               href="https://github.com/fnalabs"
               rel="noopener noreferrer"
               target="_blank"
@@ -159,6 +160,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             className="level-item"
           >
             <a
+              aria-label="NPM"
               href="https://www.npmjs.com/org/fnalabs"
               rel="noopener noreferrer"
               target="_blank"
@@ -182,6 +184,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             className="level-item"
           >
             <a
+              aria-label="twitter"
               href="https://twitter.com/FnA_Labs"
               rel="noopener noreferrer"
               target="_blank"
@@ -205,6 +208,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
             className="level-item"
           >
             <a
+              aria-label="email"
               href="mailto:contact@fnalabs.com"
             >
               <span
@@ -222,7 +226,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
               </span>
             </a>
           </div>
-        </nav>
+        </div>
         <div
           className="tile is-ancestor"
         >
@@ -271,7 +275,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   </div>
 </footer>
 `;

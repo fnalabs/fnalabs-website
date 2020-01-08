@@ -61,11 +61,11 @@ Array [
                         io
                       </sup>
                     </h1>
-                    <h4
-                      className="subtitle"
+                    <h2
+                      className="subtitle is-5"
                     >
                       From startup to enterprise...
-                    </h4>
+                    </h2>
                     <p>
                       FnA Labs has evolved enterprise architecture by giving you the Hive
                       <sup>
@@ -87,7 +87,7 @@ Array [
                   className="tile is-child"
                 >
                   <a
-                    className="button is-success"
+                    className="button is-link"
                     href="https://hiveframework.io"
                     rel="noopener noreferrer"
                     target="_blank"

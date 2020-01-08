@@ -12,5 +12,5 @@ it('<MediaContent /> should render', () => {
   expect(mediaContent.hasClass('media-content')).toBe(true)
 
   expect(mediaContent.contains(<h2 className='title is-4'>test</h2>)).toBe(true)
-  expect(mediaContent.contains(<h4 className='subtitle is-6'>subtest</h4>)).toBe(true)
+  expect(mediaContent.contains(<h3 className='subtitle is-6'>subtest</h3>)).toBe(true)
 })

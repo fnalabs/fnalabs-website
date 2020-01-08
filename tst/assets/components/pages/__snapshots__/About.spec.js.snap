@@ -129,11 +129,11 @@ Array [
                         >
                           Felicia Eilers
                         </h2>
-                        <h4
+                        <h3
                           className="subtitle is-6"
                         >
                           Co-Owner
-                        </h4>
+                        </h3>
                       </div>
                     </div>
                     <div
@@ -148,6 +148,7 @@ Array [
                     className="card-footer"
                   >
                     <a
+                      aria-label="LinkedIn"
                       className="card-footer-item"
                       href="https://www.linkedin.com/in/feliciaeilers/"
                     >
@@ -204,11 +205,11 @@ Array [
                         >
                           Adam Eilers
                         </h2>
-                        <h4
+                        <h3
                           className="subtitle is-6"
                         >
                           Co-Owner
-                        </h4>
+                        </h3>
                       </div>
                     </div>
                     <div
@@ -223,6 +224,7 @@ Array [
                     className="card-footer"
                   >
                     <a
+                      aria-label="LinkedIn"
                       className="card-footer-item"
                       href="https://www.linkedin.com/in/adameilers/"
                     >
@@ -241,6 +243,7 @@ Array [
                       </span>
                     </a>
                     <a
+                      aria-label="github"
                       className="card-footer-item"
                       href="https://github.com/aeilers"
                     >

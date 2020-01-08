@@ -33,7 +33,7 @@ class Transition extends Component {
   handleOnAccept = () => {
     const pageMeta = meta[this.props.location.pathname]
     const title = pageMeta.title
-      ? `${pageMeta.title} | ${meta.common.siteName}`
+      ? `${meta.common.siteName} | ${pageMeta.title}`
       : meta.common.siteName
 
     ReactGA.pageview(this.props.location.pathname, undefined, title)
@@ -65,8 +65,7 @@ class Transition extends Component {
             declineButtonText='Decline'
             buttonClasses='button is-small is-pulled-right is-dark'
             declineButtonClasses='button is-small is-pulled-right is-light'
-            containerClasses='notification'
-            contentClasses='is-inline-block'
+            containerClasses='notification is-radiusless'
             onAccept={this.handleOnAccept}
             onDecline={this.handleOnDecline}
           >

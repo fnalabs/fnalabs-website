@@ -9,8 +9,8 @@
 }
 
 .cookieConsent.notification {
-  background-color: #2e8b57;
-  color: #f5f5f5;
+  background-color: #2d8653;
+  color: #fff;
   position: fixed;
   width: 100%;
 
@@ -19,17 +19,14 @@
   }
 }
 
-.footer.is-dark {
-  background-color: #363636;
-  color: #f5f5f5;
-
+.footer {
   a:not(.button):not(.dropdown-item):not(.tag),
   strong {
     color: inherit
   }
 
   .svg-link path {
-    fill: #f5f5f5
+    fill: #fff
   }
 }
 

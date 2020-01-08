@@ -13,7 +13,7 @@ export default class MediaContent extends Component {
     return (
       <div className='media-content'>
         <h2 className='title is-4'>{title}</h2>
-        <h4 className='subtitle is-6'>{subtitle}</h4>
+        <h3 className='subtitle is-6'>{subtitle}</h3>
       </div>
     )
   }

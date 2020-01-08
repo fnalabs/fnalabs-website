@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ReactGA from 'react-ga'
 
@@ -11,6 +12,9 @@ import meta from 'metadata'
 
 export default class Projects extends Component {
   static contextType = Consent
+  static contextTypes = {
+    isConsent: PropTypes.bool
+  }
 
   componentDidMount () {
     if (this.context.isConsent) {
@@ -30,7 +34,7 @@ export default class Projects extends Component {
           <meta name='description' content={description} />
           <link rel='canonical' href={url} />
 
-          <meta property='og:title' content={`${title} | ${siteName}`} />
+          <meta property='og:title' content={`${siteName} | ${title}`} />
           <meta property='og:description' content={description} />
           <meta property='og:site_name' content={siteName} />
           <meta property='og:url' content={url} />

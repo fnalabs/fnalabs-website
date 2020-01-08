@@ -5,14 +5,12 @@ import { Link, NavLink } from 'react-router-dom'
 import { Container } from 'common'
 import { FnALabs } from 'icons'
 
-class Nav extends Component {
-  constructor (props) {
-    super(props)
+const isPolicyPage = /^\/(?:cookie|privacy)/
 
-    this.state = {
-      closed: true,
-      location: ''
-    }
+class Nav extends Component {
+  state = {
+    closed: true,
+    location: ''
   }
 
   handleToggleMenu = () => {
@@ -30,7 +28,7 @@ class Nav extends Component {
 
   render () {
     let navClasses = 'navbar is-spaced is-transparent is-absolute'
-    if (this.state.location !== '/cookie/' && this.state.location !== '/privacy/') {
+    if (isPolicyPage.test(this.state.location)) {
       navClasses += ' is-bold'
     }
 
@@ -38,7 +36,7 @@ class Nav extends Component {
       <nav className={navClasses} role='navigation' aria-label='main navigation'>
         <Container>
           <div className='navbar-brand'>
-            <Link to='/' className='navbar-item'><FnALabs /></Link>
+            <Link to='/' className='navbar-item' aria-label='home page'><FnALabs /></Link>
 
             <div className={`navbar-burger${this.state.closed ? '' : ' is-active'}`} onClick={this.handleToggleMenu}>
               <span />

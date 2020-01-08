@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ReactGA from 'react-ga'
 
@@ -12,6 +13,9 @@ import meta from 'metadata'
 
 export default class Home extends Component {
   static contextType = Consent
+  static contextTypes = {
+    isConsent: PropTypes.bool
+  }
 
   componentDidMount () {
     if (this.context.isConsent) {

@@ -13,7 +13,7 @@ export const SupportMenu = () => (
             <div className='column' />
             <div className='column is-narrow'>
 
-              <h4 className='subtitle'>Featured Projects</h4>
+              <h3 className='subtitle is-4'>Featured Projects</h3>
               <nav className='menu'>
 
                 <p className='menu-label'>Hive<sup>io</sup> Framework</p>
@@ -21,7 +21,7 @@ export const SupportMenu = () => (
                   <li><AnalyticsLink to='https://hiveframework.io'>Homepage</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://hiveframework.io/overview'>Overview</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://hiveframework.io/start'>Get Started</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://fnalabs.github.io/hive-js/'>Documentation</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://hiveframework.io/documentation'>Documentation</AnalyticsLink></li>
                   <li>
                     <a className='menu-label-sub'>Class Library</a>
                     <ul>
@@ -69,7 +69,7 @@ export const SupportMenu = () => (
             <div className='column' />
             <div className='column is-narrow'>
 
-              <h4 className='subtitle'>More Projects</h4>
+              <h3 className='subtitle is-4'>More Projects</h3>
               <nav className='menu'>
 
                 <p className='menu-label'>Model(JSON)<sup>js</sup></p>
@@ -116,7 +116,7 @@ export const SupportMenu = () => (
                 </ul>
               </nav>
 
-              <h4 className='subtitle has-nav-spacing'>Contact By Email</h4>
+              <h3 className='subtitle is-4 has-nav-spacing'>Contact By Email</h3>
               <nav className='menu'>
                 <ul className='menu-list'>
                   <li><AnalyticsLink to='mailto:support@fnalabs.com'>Support</AnalyticsLink></li>

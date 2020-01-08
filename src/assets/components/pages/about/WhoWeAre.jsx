@@ -31,7 +31,7 @@ export const WhoWeAre = () => (
                   </CardContent>
 
                   <CardFooter>
-                    <AnalyticsLink to='https://www.linkedin.com/in/feliciaeilers/' className='card-footer-item'>
+                    <AnalyticsLink to='https://www.linkedin.com/in/feliciaeilers/' className='card-footer-item' aria-label='LinkedIn'>
                       <span className='icon'><LinkedIn /></span>
                     </AnalyticsLink>
                   </CardFooter>
@@ -54,10 +54,10 @@ export const WhoWeAre = () => (
                   </CardContent>
 
                   <CardFooter>
-                    <AnalyticsLink to='https://www.linkedin.com/in/adameilers/' className='card-footer-item'>
+                    <AnalyticsLink to='https://www.linkedin.com/in/adameilers/' className='card-footer-item' aria-label='LinkedIn'>
                       <span className='icon'><LinkedIn /></span>
                     </AnalyticsLink>
-                    <AnalyticsLink to='https://github.com/aeilers' className='card-footer-item'>
+                    <AnalyticsLink to='https://github.com/aeilers' className='card-footer-item' aria-label='github'>
                       <span className='icon'><Github className='svg-inline' /></span>
                     </AnalyticsLink>
                   </CardFooter>

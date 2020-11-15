@@ -44,7 +44,7 @@ export const HowWeWork = () => (
                   <Succinctness />
                 </figure>
                 <h3 className='has-text-centered'>Succinctness</h3>
-                <p>At FnA Labs we only equip our products with code that is deemed necessary to get the job done. Our projects are a true essence of concise rolls and responsibilities all wrapped up in a <strong>straightforward</strong> package. No fluff included.</p>
+                <p>At FnA Labs we only equip our products with code that is deemed necessary to get the job done. Our projects are a true essence of concise rolls and responsibilities all wrapped up in a <strong>straightforward</strong> package.</p>
               </Tile>
             </Tile>
           </Tile>

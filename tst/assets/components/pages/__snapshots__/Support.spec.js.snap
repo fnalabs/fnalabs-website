@@ -142,171 +142,63 @@ Array [
                   </li>
                   <li>
                     <a
-                      className="menu-label-sub"
+                      href="https://github.com/fnalabs/hive-io"
                     >
-                      Class Library
+                      Github
                     </a>
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.npmjs.com/package/hive-io"
-                        >
-                          NPM
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-js"
-                        >
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-js/issues"
-                        >
-                          Issues
-                        </a>
-                      </li>
-                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/fnalabs/hive-io/issues"
+                    >
+                      Issues
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.npmjs.com/package/hive-io"
+                    >
+                      Class Library (NPM)
+                    </a>
                   </li>
                   <li>
                     <a
                       className="menu-label-sub"
                     >
-                      Base image
+                      Docker images
                     </a>
                     <ul>
                       <li>
                         <a
                           href="https://hub.docker.com/r/fnalabs/hive-base-js/"
                         >
-                          Docker
+                          Base
                         </a>
                       </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-base-js"
-                        >
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-base-js/issues"
-                        >
-                          Issues
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      className="menu-label-sub"
-                    >
-                      Producer image
-                    </a>
-                    <ul>
                       <li>
                         <a
                           href="https://hub.docker.com/r/fnalabs/hive-producer-js/"
                         >
-                          Docker
+                          Producer
                         </a>
                       </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-producer-js"
-                        >
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-producer-js/issues"
-                        >
-                          Issues
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      className="menu-label-sub"
-                    >
-                      Consumer image
-                    </a>
-                    <ul>
                       <li>
                         <a
                           href="https://hub.docker.com/r/fnalabs/hive-consumer-js/"
                         >
-                          Docker
+                          Consumer
                         </a>
                       </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-consumer-js"
-                        >
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-consumer-js/issues"
-                        >
-                          Issues
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      className="menu-label-sub"
-                    >
-                      Stream Processor image
-                    </a>
-                    <ul>
                       <li>
                         <a
                           href="https://hub.docker.com/r/fnalabs/hive-stream-processor-js/"
                         >
-                          Docker
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-stream-processor-js"
-                        >
-                          Github
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/fnalabs/hive-stream-processor-js/issues"
-                        >
-                          Issues
+                          Stream Processor
                         </a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-              </nav>
-            </div>
-            <div
-              className="column"
-            />
-            <div
-              className="column is-narrow"
-            >
-              <h3
-                className="subtitle is-4"
-              >
-                More Projects
-              </h3>
-              <nav
-                className="menu"
-              >
                 <p
                   className="menu-label"
                 >
@@ -334,14 +226,14 @@ Array [
                   </li>
                   <li>
                     <a
-                      href="https://github.com/fnalabs/model-json-js"
+                      href="https://github.com/fnalabs/lib-js/tree/master/packages/model-json-js"
                     >
                       Github
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://github.com/fnalabs/model-json-js/issues"
+                      href="https://github.com/fnalabs/lib-js/issues"
                     >
                       Issues
                     </a>
@@ -374,19 +266,35 @@ Array [
                   </li>
                   <li>
                     <a
-                      href="https://github.com/fnalabs/schema-json-js"
+                      href="https://github.com/fnalabs/lib-js/tree/master/packages/schema-json-js"
                     >
                       Github
                     </a>
                   </li>
                   <li>
                     <a
-                      href="https://github.com/fnalabs/schema-json-js/issues"
+                      href="https://github.com/fnalabs/lib-js/issues"
                     >
                       Issues
                     </a>
                   </li>
                 </ul>
+              </nav>
+            </div>
+            <div
+              className="column"
+            />
+            <div
+              className="column is-narrow"
+            >
+              <h3
+                className="subtitle is-4"
+              >
+                More Projects
+              </h3>
+              <nav
+                className="menu"
+              >
                 <p
                   className="menu-label"
                 >
@@ -476,6 +384,13 @@ Array [
                       href="https://github.com/fnalabs/starter-react-js"
                     >
                       React SSR PWA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/fnalabs/starter-fastify-js"
+                    >
+                      Fastify service
                     </a>
                   </li>
                   <li>

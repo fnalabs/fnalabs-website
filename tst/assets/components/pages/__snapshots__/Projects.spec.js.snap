@@ -79,7 +79,7 @@ Array [
                       <strong>
                         cloud-native
                       </strong>
-                      , giving you more time to spend solving your business challenges and less time on your infrastructure. Furthermore the framework is flexible in allowing you to use multiple patterns and architectures, as well as providing robustness with support of the JSON Schema and Flux Standard Action specifications.
+                      , giving you more time to spend solving your business challenges and less time on your infrastructure.
                     </p>
                   </article>
                 </div>
@@ -92,7 +92,7 @@ Array [
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Release Candidate 3
+                    Learn More
                   </a>
                 </div>
               </div>
@@ -144,7 +144,7 @@ Array [
                         </sup>
                       </h3>
                       <p>
-                        Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the services/apps you build or across networks. It can represent data Models as either immutable or not and uses schema validation with Schema(JSON)
+                        A Model class designed to serialize and transfer structured data within the services/apps you build or across networks and uses schema validation with Schema(JSON)
                         <sup>
                           js
                         </sup>
@@ -185,7 +185,7 @@ Array [
                         </sup>
                       </h3>
                       <p>
-                        Our JSON Schema project is a Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.
+                        A Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.
                       </p>
                     </article>
                   </div>
@@ -223,13 +223,13 @@ Array [
                         test-automation
                       </h3>
                       <p>
-                        We created a reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our 
+                        A reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our 
                         <a
                           href="https://github.com/fnalabs/test-automation-starter"
                         >
                           starter kit
                         </a>
-                        , it will allow you to run automated browser tests inside a controlled environment. With the use of Docker you are able to automatically have tests run when a file is saved for development or single run containers for CI/CD deployments.
+                        , which is built on Docker, you are able to automatically run tests in a containerized environment.
                       </p>
                     </article>
                   </div>
@@ -278,6 +278,13 @@ Array [
                             href="https://github.com/fnalabs/starter-react-js"
                           >
                             React SSR PWA
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://github.com/fnalabs/starter-fastify-js"
+                          >
+                            Fastify service
                           </a>
                         </li>
                         <li>

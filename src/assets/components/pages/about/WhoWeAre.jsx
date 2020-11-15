@@ -26,7 +26,7 @@ export const WhoWeAre = () => (
                     </Media>
 
                     <div className='content'>
-                      <p>I enjoy going for walks, having fun at our neighborhood parks with my family, as well as baking. Watching a good TV show is just one way I like to relax. I also like to know that my communities are taken care of. With over 10 years of experience in customer relations, it gives me great ease to know that my communities are comfy when using our products.</p>
+                      <p>I enjoy going for walks, having fun at our neighborhood parks with my family, as well as baking. With over 10 years of experience in business relations, it gives me great pleasure to know that FnA Labs can help our communities in giving the people a product they deserve.</p>
                     </div>
                   </CardContent>
 
@@ -49,7 +49,7 @@ export const WhoWeAre = () => (
                     </Media>
 
                     <div className='content'>
-                      <p>Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have since added to the family and have had many great adventures exploring the wilderness out here. I also take great care in what I create in our Lab. I want to make sure that our products are going to take care of our communities.</p>
+                      <p>Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness out here. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.</p>
                     </div>
                   </CardContent>
 

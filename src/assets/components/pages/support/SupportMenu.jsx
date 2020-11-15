@@ -22,46 +22,34 @@ export const SupportMenu = () => (
                   <li><AnalyticsLink to='https://hiveframework.io/overview'>Overview</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://hiveframework.io/start'>Get Started</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://hiveframework.io/documentation'>Documentation</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/hive-io'>Github</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/hive-io/issues'>Issues</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://www.npmjs.com/package/hive-io'>Class Library (NPM)</AnalyticsLink></li>
                   <li>
-                    <a className='menu-label-sub'>Class Library</a>
+                    <a className='menu-label-sub'>Docker images</a>
                     <ul>
-                      <li><AnalyticsLink to='https://www.npmjs.com/package/hive-io'>NPM</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-js/issues'>Issues</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-base-js/'>Base</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-producer-js/'>Producer</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-consumer-js/'>Consumer</AnalyticsLink></li>
+                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-stream-processor-js/'>Stream Processor</AnalyticsLink></li>
                     </ul>
                   </li>
-                  <li>
-                    <a className='menu-label-sub'>Base image</a>
-                    <ul>
-                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-base-js/'>Docker</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-base-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-base-js/issues'>Issues</AnalyticsLink></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className='menu-label-sub'>Producer image</a>
-                    <ul>
-                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-producer-js/'>Docker</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-producer-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-producer-js/issues'>Issues</AnalyticsLink></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className='menu-label-sub'>Consumer image</a>
-                    <ul>
-                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-consumer-js/'>Docker</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-consumer-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-consumer-js/issues'>Issues</AnalyticsLink></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className='menu-label-sub'>Stream Processor image</a>
-                    <ul>
-                      <li><AnalyticsLink to='https://hub.docker.com/r/fnalabs/hive-stream-processor-js/'>Docker</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-stream-processor-js'>Github</AnalyticsLink></li>
-                      <li><AnalyticsLink to='https://github.com/fnalabs/hive-stream-processor-js/issues'>Issues</AnalyticsLink></li>
-                    </ul>
-                  </li>
+                </ul>
+
+                <p className='menu-label'>Model(JSON)<sup>js</sup></p>
+                <ul className='menu-list'>
+                  <li><AnalyticsLink to='https://fnalabs.github.io/model-json-js/'>Documentation</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://www.npmjs.com/package/model-json-js'>NPM</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/lib-js/tree/master/packages/model-json-js'>Github</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/lib-js/issues'>Issues</AnalyticsLink></li>
+                </ul>
+
+                <p className='menu-label'>Schema(JSON)<sup>js</sup></p>
+                <ul className='menu-list'>
+                  <li><AnalyticsLink to='https://fnalabs.github.io/schema-json-js/'>Documentation</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://www.npmjs.com/package/schema-json-js'>NPM</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/lib-js/tree/master/packages/schema-json-js'>Github</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/lib-js/issues'>Issues</AnalyticsLink></li>
                 </ul>
               </nav>
             </div>
@@ -71,22 +59,6 @@ export const SupportMenu = () => (
 
               <h3 className='subtitle is-4'>More Projects</h3>
               <nav className='menu'>
-
-                <p className='menu-label'>Model(JSON)<sup>js</sup></p>
-                <ul className='menu-list'>
-                  <li><AnalyticsLink to='https://fnalabs.github.io/model-json-js/'>Documentation</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://www.npmjs.com/package/model-json-js'>NPM</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/model-json-js'>Github</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/model-json-js/issues'>Issues</AnalyticsLink></li>
-                </ul>
-
-                <p className='menu-label'>Schema(JSON)<sup>js</sup></p>
-                <ul className='menu-list'>
-                  <li><AnalyticsLink to='https://fnalabs.github.io/schema-json-js/'>Documentation</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://www.npmjs.com/package/schema-json-js'>NPM</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/schema-json-js'>Github</AnalyticsLink></li>
-                  <li><AnalyticsLink to='https://github.com/fnalabs/schema-json-js/issues'>Issues</AnalyticsLink></li>
-                </ul>
 
                 <p className='menu-label'>test-automation</p>
                 <ul className='menu-list'>
@@ -112,6 +84,7 @@ export const SupportMenu = () => (
                 <ul className='menu-list'>
                   <li><AnalyticsLink to='https://github.com/fnalabs/starter-npm-js'>NPM package</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React SSR PWA</AnalyticsLink></li>
+                  <li><AnalyticsLink to='https://github.com/fnalabs/starter-fastify-js'>Fastify service</AnalyticsLink></li>
                   <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 service</AnalyticsLink></li>
                 </ul>
               </nav>

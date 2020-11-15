@@ -23,12 +23,12 @@ export const ProjectHero = () => (
                   <article className='content'>
                     <h1 className='title'>Hive<sup>io</sup></h1>
                     <h2 className='subtitle is-5'>From startup to enterprise...</h2>
-                    <p>FnA Labs has evolved enterprise architecture by giving you the Hive<sup>io</sup> framework. Our product works for fresh startups and large-scale corporations alike. It is <strong>reactive</strong> and <strong>cloud-native</strong>, giving you more time to spend solving your business challenges and less time on your infrastructure. Furthermore the framework is flexible in allowing you to use multiple patterns and architectures, as well as providing robustness with support of the JSON Schema and Flux Standard Action specifications.</p>
+                    <p>FnA Labs has evolved enterprise architecture by giving you the Hive<sup>io</sup> framework. Our product works for fresh startups and large-scale corporations alike. It is <strong>reactive</strong> and <strong>cloud-native</strong>, giving you more time to spend solving your business challenges and less time on your infrastructure.</p>
                   </article>
                 </Tile>
 
                 <Tile type='child'>
-                  <AnalyticsLink to='https://hiveframework.io' target='_blank' rel='noopener noreferrer' className='button is-link'>Release Candidate 3</AnalyticsLink>
+                  <AnalyticsLink to='https://hiveframework.io' target='_blank' rel='noopener noreferrer' className='button is-link'>Learn More</AnalyticsLink>
                 </Tile>
               </Tile>
             </Tile>

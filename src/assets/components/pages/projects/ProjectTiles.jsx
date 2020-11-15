@@ -16,7 +16,7 @@ export const ProjectTiles = () => (
                   <Tile type='child'>
                     <article className='content'>
                       <h3>Model(JSON)<sup>js</sup></h3>
-                      <p>Our Model JSON Serialization project is a Model class designed to serialize and transfer structured data within the services/apps you build or across networks. It can represent data Models as either immutable or not and uses schema validation with Schema(JSON)<sup>js</sup>.</p>
+                      <p>A Model class designed to serialize and transfer structured data within the services/apps you build or across networks and uses schema validation with Schema(JSON)<sup>js</sup>.</p>
                     </article>
                   </Tile>
 
@@ -31,7 +31,7 @@ export const ProjectTiles = () => (
                   <Tile type='child'>
                     <article className='content'>
                       <h3>Schema(JSON)<sup>js</sup></h3>
-                      <p>Our JSON Schema project is a Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.</p>
+                      <p>A Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.</p>
                     </article>
                   </Tile>
 
@@ -48,7 +48,7 @@ export const ProjectTiles = () => (
                   <Tile type='child'>
                     <article className='content'>
                       <h3>test-automation</h3>
-                      <p>We created a reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our <a href='https://github.com/fnalabs/test-automation-starter'>starter kit</a>, it will allow you to run automated browser tests inside a controlled environment. With the use of Docker you are able to automatically have tests run when a file is saved for development or single run containers for CI/CD deployments.</p>
+                      <p>A reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our <a href='https://github.com/fnalabs/test-automation-starter'>starter kit</a>, which is built on Docker, you are able to automatically run tests in a containerized environment.</p>
                     </article>
                   </Tile>
 
@@ -67,6 +67,7 @@ export const ProjectTiles = () => (
                       <ul>
                         <li><AnalyticsLink to='https://github.com/fnalabs/starter-npm-js'>NPM package</AnalyticsLink></li>
                         <li><AnalyticsLink to='https://github.com/fnalabs/starter-react-js'>React SSR PWA</AnalyticsLink></li>
+                        <li><AnalyticsLink to='https://github.com/fnalabs/starter-fastify-js'>Fastify service</AnalyticsLink></li>
                         <li><AnalyticsLink to='https://github.com/fnalabs/starter-koa2-js'>Koa2 service</AnalyticsLink></li>
                       </ul>
                     </article>

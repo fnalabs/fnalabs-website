@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import ReactGA from 'react-ga'
 
 import Consent from 'contexts/Consent'
+
+import { Header } from 'layout'
 
 import { AboutHero } from './AboutHero'
 import { WhoWeAre } from './WhoWeAre'
@@ -26,21 +27,10 @@ export default class About extends Component {
 
   render () {
     const { title, description, url } = meta['/about']
-    const siteName = meta.common.siteName
 
     return (
       <>
-        <Helmet>
-          <title>{siteName} | {title}</title>
-          <meta name='description' content={description} />
-          <link rel='canonical' href={url} />
-
-          <meta property='og:title' content={`${siteName} | ${title}`} />
-          <meta property='og:description' content={description} />
-          <meta property='og:site_name' content={siteName} />
-          <meta property='og:url' content={url} />
-          <meta property='og:type' content='website' />
-        </Helmet>
+        <Header title={`${meta.common.siteName} | ${title}`} description={description} url={url} />
 
         <AboutHero />
         <WhoWeAre />

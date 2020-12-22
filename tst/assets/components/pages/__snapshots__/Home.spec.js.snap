@@ -25,6 +25,7 @@ exports[`<Home /> should render homepage static content 1`] = `
               <svg
                 className="svg-inline"
                 height="72"
+                role="img"
                 viewBox="0 0 117.31758 135.46667"
                 xmlns="http://www.w3.org/2000/svg"
               >

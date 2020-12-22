@@ -49,7 +49,7 @@ export const WhoWeAre = () => (
                     </Media>
 
                     <div className='content'>
-                      <p>Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness out here. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.</p>
+                      <p>Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness by bicycle or by foot. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.</p>
                     </div>
                   </CardContent>
 

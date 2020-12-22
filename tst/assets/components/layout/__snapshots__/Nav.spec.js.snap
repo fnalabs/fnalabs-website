@@ -20,6 +20,7 @@ exports[`<Nav /> should render About page nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -113,6 +114,7 @@ exports[`<Nav /> should render Cookie Policy page nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -205,6 +207,7 @@ exports[`<Nav /> should render Privacy Policy page nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -297,6 +300,7 @@ exports[`<Nav /> should render Projects page nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -390,6 +394,7 @@ exports[`<Nav /> should render Support page nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -483,6 +488,7 @@ exports[`<Nav /> should render homepage nav correctly 1`] = `
       >
         <svg
           height="36"
+          role="img"
           viewBox="0 0 290 180"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -27,6 +27,7 @@ Array [
                   className="tile is-child has-text-centered"
                 >
                   <svg
+                    role="img"
                     style={
                       Object {
                         "marginTop": 12,

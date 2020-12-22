@@ -2,6 +2,7 @@
   "common": {
     "siteName": "FnA Labs",
     "baseUrl": "https://fnalabs.com",
+    "imageUrl": "https://fnalabs.com/icon_512x512.png",
     "cacheTime": 600000
   },
   "/": {
@@ -34,12 +35,14 @@
   "/cookie": {
     "name": "cookie",
     "title": "Cookie Policy",
+    "description": "Privacy policy for the FnA Labs company website.",
     "url": "https://fnalabs.com/cookie",
     "priority": 0.0
   },
   "/privacy": {
     "name": "privacy",
     "title": "Privacy Policy",
+    "description": "Privacy policy for the FnA Labs company website.",
     "url": "https://fnalabs.com/privacy",
     "priority": 0.0
   }

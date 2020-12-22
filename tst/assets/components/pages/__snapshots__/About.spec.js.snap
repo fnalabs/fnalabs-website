@@ -28,6 +28,7 @@ Array [
                 >
                   <svg
                     className="svg-hero"
+                    role="img"
                     viewBox="0 0 256 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -38,6 +39,7 @@ Array [
                   </svg>
                   <svg
                     className="svg-hero"
+                    role="img"
                     viewBox="0 0 192 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -157,6 +159,7 @@ Array [
                       >
                         <svg
                           className="svg-inline"
+                          role="img"
                           viewBox="0 0 448 512"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -216,7 +219,7 @@ Array [
                       className="content"
                     >
                       <p>
-                        Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness out here. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.
+                        Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness by bicycle or by foot. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.
                       </p>
                     </div>
                   </div>
@@ -233,6 +236,7 @@ Array [
                       >
                         <svg
                           className="svg-inline"
+                          role="img"
                           viewBox="0 0 448 512"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -252,6 +256,7 @@ Array [
                       >
                         <svg
                           className="svg-inline"
+                          role="img"
                           viewBox="0 0 496 512"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -309,6 +314,7 @@ Array [
                   className="image is-96x96"
                 >
                   <svg
+                    role="img"
                     viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -346,6 +352,7 @@ Array [
                   className="image is-96x96"
                 >
                   <svg
+                    role="img"
                     style={
                       Object {
                         "position": "relative",
@@ -389,6 +396,7 @@ Array [
                   className="image is-96x96"
                 >
                   <svg
+                    role="img"
                     viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -422,6 +430,7 @@ Array [
                   className="image is-96x96"
                 >
                   <svg
+                    role="img"
                     viewBox="0 0 496 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >

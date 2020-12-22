@@ -1,6 +1,6 @@
 {
   "name": "fnalabs-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FnA Labs company website.",
   "scripts": {
     "prebuild": "del dist",

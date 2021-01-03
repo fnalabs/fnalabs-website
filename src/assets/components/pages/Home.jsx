@@ -8,7 +8,7 @@ import { Header } from 'layout'
 
 import { AnalyticsLink, Container, Tile } from 'common'
 import { Hero, HeroBody } from 'common/hero'
-import { HiveIO } from 'icons'
+import { HiveIO, OpenTelemetry } from 'icons'
 
 import meta from 'metadata'
 
@@ -41,7 +41,11 @@ export default class Home extends Component {
                       <HiveIO className='svg-inline' height='72' />
                       Hive<sup>io</sup>
                     </h1>
-                    <h2 className='subtitle'>A reactive, cloud-native framework for building microservices.</h2>
+                    <h2 className='subtitle'>A reactive, cloud-native framework for building microservices</h2>
+                    <h2 className='subtitle'>
+                      <OpenTelemetry className='svg-link' height='32' />
+                      Now integrated with <AnalyticsLink to='https://opentelemetry.io' target='_blank' rel='noopener noreferrer'>OpenTelemetry</AnalyticsLink>
+                    </h2>
                     <AnalyticsLink to='https://hiveframework.io' className='button is-link' target='_blank' rel='noopener noreferrer'>Learn More</AnalyticsLink>
                   </Tile>
 

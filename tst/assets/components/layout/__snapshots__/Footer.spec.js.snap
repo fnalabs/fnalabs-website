@@ -14,7 +14,7 @@ exports[`<Footer /> should render static content correctly 1`] = `
         className="column is-narrow content"
       >
         <p>
-          Copyright © 2020 FnA Labs
+          Copyright © FnA Labs
         </p>
         <p
           className="is-size-7"

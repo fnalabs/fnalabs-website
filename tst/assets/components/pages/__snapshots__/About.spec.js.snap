@@ -65,7 +65,7 @@ Array [
                       About
                     </h1>
                     <p>
-                      FnA Labs, a research and development company, was founded in 2018 by my husband and I. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we are able to help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the industry and give our customers the ultimate quality in products.
+                      FnA Labs, a research and development company, was founded in 2018 by my husband and me. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we can help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the industry and give our customers the ultimate quality in products.
                     </p>
                   </article>
                 </div>
@@ -219,7 +219,7 @@ Array [
                       className="content"
                     >
                       <p>
-                        Besides coding away, I enjoy spending time with my family. I also like to relax by playing video games or watching a movie. We have had many great adventures exploring the wilderness by bicycle or by foot. I also take great care in what I research and develop in our Lab to make sure that our products are of superior quality.
+                        I take great care in what I research and develop in our Lab to ensure our products are of superior quality. Besides coding away, I enjoy spending time with my family. We have had many great adventures exploring the wilderness by bicycle or on foot. I also like to relax by playing video games or watching movies.
                       </p>
                     </div>
                   </div>
@@ -297,13 +297,63 @@ Array [
           >
             The 
             <strong>
-              Four Paramounts
+              Five Paramounts
             </strong>
-             are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Four Paramounts from beginning to end is our way of certifying the products we create.
+             are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Five Paramounts from beginning to end is our way of certifying the products we create.
           </p>
           <div
             className="tile is-ancestor is-vertical"
           >
+            <div
+              className="tile is-parent is-12"
+            >
+              <div
+                className="tile is-child is-12 paramount content"
+              >
+                <div
+                  className="columns"
+                >
+                  <div
+                    className="column is-3-desktop is-hidden-mobile"
+                  />
+                  <div
+                    className="column is-6-desktop"
+                  >
+                    <figure
+                      className="image is-96x96"
+                    >
+                      <svg
+                        role="img"
+                        style={
+                          Object {
+                            "position": "relative",
+                            "top": 25,
+                          }
+                        }
+                        viewBox="0 0 640 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M320.67 64c-442.6 0-357.57 384-158.46 384 39.9 0 77.47-20.69 101.42-55.86l25.73-37.79c15.66-22.99 46.97-22.99 62.63 0l25.73 37.79C401.66 427.31 439.23 448 479.13 448c189.86 0 290.63-384-158.46-384zM184 308.36c-41.06 0-67.76-25.66-80.08-41.05-5.23-6.53-5.23-16.09 0-22.63 12.32-15.4 39.01-41.05 80.08-41.05s67.76 25.66 80.08 41.05c5.23 6.53 5.23 16.09 0 22.63-12.32 15.4-39.02 41.05-80.08 41.05zm272 0c-41.06 0-67.76-25.66-80.08-41.05-5.23-6.53-5.23-16.09 0-22.63 12.32-15.4 39.01-41.05 80.08-41.05s67.76 25.66 80.08 41.05c5.23 6.53 5.23 16.09 0 22.63-12.32 15.4-39.02 41.05-80.08 41.05z"
+                          fill="#00008b"
+                        />
+                      </svg>
+                    </figure>
+                    <h3
+                      className="has-text-centered"
+                    >
+                      Privacy
+                    </h3>
+                    <p>
+                      We strive to keep your information private. Your information is not sold to third parties. What information we gather is for FnA Labs only and is only used to help make a better product for you.
+                    </p>
+                  </div>
+                  <div
+                    className="column is-3-desktop is-hidden-mobile"
+                  />
+                </div>
+              </div>
+            </div>
             <div
               className="tile is-parent is-12"
             >
@@ -378,11 +428,11 @@ Array [
                   <strong>
                     performance
                   </strong>
-                   by making sure our products load 
+                   by making sure our products load and run 
                   <strong>
                     fast
                   </strong>
-                   and run fast without sacrificing usability. We stay true to all use cases by making sure we are choosing the right programming concepts for the product. Our users will not have to wait and neither will their customers.
+                   without sacrificing usability. We stay true to all use cases by choosing the right programming concepts for the solution. Our users will not have to wait and neither will their customers.
                 </p>
               </div>
             </div>
@@ -416,11 +466,11 @@ Array [
                   <strong>
                     validation
                   </strong>
-                   we are able to ensure that our code is up to par. We rigorously 
+                  , we can ensure that our code is up to par. We rigorously 
                   <strong>
                     test
                   </strong>
-                   our products to try to eliminate any bugs that may arise before an official release. Our products are meant to help, not hinder, our users.
+                   our products to try to eliminate any bugs that may arise before an official release. Our products are to help, not hinder, our users.
                 </p>
               </div>
               <div
@@ -446,7 +496,7 @@ Array [
                   Succinctness
                 </h3>
                 <p>
-                  At FnA Labs we only equip our products with code that is deemed necessary to get the job done. Our projects are a true essence of concise rolls and responsibilities all wrapped up in a 
+                  At FnA Labs we only equip our products with code that is deemed necessary to get the job done. Our projects are a true essence of concise roles and responsibilities all wrapped up in a 
                   <strong>
                     straightforward
                   </strong>

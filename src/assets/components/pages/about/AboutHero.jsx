@@ -23,7 +23,7 @@ export const AboutHero = () => (
                 <Tile type='child'>
                   <article className='content'>
                     <h1 className='title'>About</h1>
-                    <p>FnA Labs, a research and development company, was founded in 2018 by my husband and I. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we are able to help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the industry and give our customers the ultimate quality in products.</p>
+                    <p>FnA Labs, a research and development company, was founded in 2018 by my husband and me. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we can help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the industry and give our customers the ultimate quality in products.</p>
                   </article>
                 </Tile>
               </Tile>

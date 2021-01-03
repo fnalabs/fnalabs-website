@@ -9,7 +9,7 @@ export const Footer = () => (
     <Container>
       <nav className='columns'>
         <div className='column is-narrow content'>
-          <p>Copyright &copy; 2020 FnA Labs</p>
+          <p>Copyright &copy; FnA Labs</p>
           <p className='is-size-7'>Icons from <a href='https://fontawesome.com/' target='_blank' rel='noopener noreferrer'>Font Awesome</a> (<a href='https://fontawesome.com/license' target='_blank' rel='noopener noreferrer'>License</a>)</p>
           <p>
             <a href='https://bulma.io' target='_blank' rel='noopener noreferrer'>

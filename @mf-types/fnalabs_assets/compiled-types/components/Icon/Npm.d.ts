@@ -1,1 +1,3 @@
-export declare const Npm: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Npm: FC;
+export default Npm;

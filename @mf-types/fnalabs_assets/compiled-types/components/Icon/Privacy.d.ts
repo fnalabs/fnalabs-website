@@ -1,1 +1,3 @@
-export declare const Privacy: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Privacy: FC;
+export default Privacy;

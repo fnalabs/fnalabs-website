@@ -1,9 +1,8 @@
 import type { BreakpointColumn, FractionSize, FractionSizes, NumericSize, NumericSizes, TextPosition, TextPositions } from '../../types';
 import { FC, ReactNode } from 'react';
 export interface IColumn {
-    children: ReactNode;
+    children?: ReactNode;
     content?: boolean;
-    document?: boolean;
     fractionSize?: FractionSize | FractionSizes | Array<FractionSize | FractionSizes>;
     fractionSizeOffset?: FractionSize | FractionSizes | Array<FractionSize | FractionSizes>;
     hiddenTouch?: boolean;

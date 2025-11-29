@@ -1,1 +1,3 @@
-export declare const Flexibility: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Flexibility: FC;
+export default Flexibility;

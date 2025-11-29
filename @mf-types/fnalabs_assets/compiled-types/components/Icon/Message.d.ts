@@ -1,1 +1,3 @@
-export declare const Message: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Message: FC;
+export default Message;

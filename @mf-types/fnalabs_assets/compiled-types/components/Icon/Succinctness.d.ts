@@ -1,1 +1,3 @@
-export declare const Succinctness: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Succinctness: FC;
+export default Succinctness;

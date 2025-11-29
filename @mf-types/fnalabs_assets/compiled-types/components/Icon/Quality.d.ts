@@ -1,1 +1,3 @@
-export declare const Quality: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Quality: FC;
+export default Quality;

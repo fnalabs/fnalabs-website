@@ -1,1 +1,3 @@
-export declare const Support: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Support: FC;
+export default Support;

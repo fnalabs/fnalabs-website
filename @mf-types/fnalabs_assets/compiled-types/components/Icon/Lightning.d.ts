@@ -1,1 +1,3 @@
-export declare const Lightning: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Lightning: FC;
+export default Lightning;

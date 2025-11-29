@@ -1,1 +1,3 @@
-export declare const Efficiency: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Efficiency: FC;
+export default Efficiency;

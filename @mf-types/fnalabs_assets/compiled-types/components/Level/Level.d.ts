@@ -10,6 +10,7 @@ export interface ILevelGroup {
 export interface ILevel {
     items: ILevelGroup | ILevelItem[];
     mobile?: boolean;
+    nav?: boolean;
 }
 declare const Level: FC<ILevel>;
 export default Level;

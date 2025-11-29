@@ -1,8 +1,6 @@
-import type { ILink } from '../../types';
-import { FC } from 'react';
+import { type FC, type ReactNode } from 'react';
 export interface IFooter {
-    projectLinks: ILink[];
-    policyLinks: ILink[];
+    children: ReactNode;
 }
 declare const Footer: FC<IFooter>;
 export default Footer;

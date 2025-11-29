@@ -1,1 +1,3 @@
-export declare const ArrowLeft: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const ArrowLeft: FC;
+export default ArrowLeft;

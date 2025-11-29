@@ -4,7 +4,7 @@ export interface IMenuLink extends ILink {
     list?: IMenuLink[];
 }
 export interface IMenuList {
-    label: string;
+    label?: string;
     list: IMenuLink[];
 }
 export interface IMenu {

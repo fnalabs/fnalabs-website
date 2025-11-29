@@ -1,6 +1,8 @@
+import type { ILink } from '../../types';
 import { FC } from 'react';
-import { IFooter } from '../../components/Footer/Footer';
-export interface IGlobalLayout extends IFooter {
+export interface IGlobalLayout {
+    pageLinks: ILink[];
+    policyLinks: ILink[];
 }
 declare const GlobalLayout: FC<IGlobalLayout>;
 export default GlobalLayout;

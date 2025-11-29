@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import React, { type FC, lazy } from 'react'
 import { Link } from 'react-router'
 import {
   remoteBox,
@@ -6,15 +6,17 @@ import {
   remoteColumns,
   remoteContainer,
   remoteHero,
-  remoteSection
-} from '../../remotes'
+  remoteSection,
+  remoteIconHiveIO,
+} from '../remotes'
 
-const Box = React.lazy(remoteBox)
-const Column = React.lazy(remoteColumn)
-const Columns = React.lazy(remoteColumns)
-const Container = React.lazy(remoteContainer)
-const Hero = React.lazy(remoteHero)
-const Section = React.lazy(remoteSection)
+const Box = lazy(remoteBox)
+const Column = lazy(remoteColumn)
+const Columns = lazy(remoteColumns)
+const Container = lazy(remoteContainer)
+const Hero = lazy(remoteHero)
+const Section = lazy(remoteSection)
+const IconHiveIO = lazy(remoteIconHiveIO)
 
 const Projects: FC = () => (
   <>
@@ -24,7 +26,7 @@ const Projects: FC = () => (
           <Column numericSize='8-desktop' numericSizeOffset='2-desktop'>
             <Columns>
               <Column numericSize={3}>
-                product logo
+                <IconHiveIO />
               </Column>
 
               <Column content>
@@ -55,7 +57,7 @@ const Projects: FC = () => (
                   <article>
                     <h3>Schema(JSON)<sup>js</sup></h3>
                     <p>A Schema class designed to validate structured data based on the JSON Schema specification. It represents the schemas as immutable objects with the flexibility of making partial schema validations via Closures and Thunks.</p>
-                    <p><Link to='/schema-json-js' className='button is-link'>Learn More</Link></p>
+                    <p><Link to='https://fnalabs.github.io/schema-json-js/' className='button is-link'>Learn More</Link></p>
                   </article>
                 </Box>
               </Column>
@@ -65,7 +67,7 @@ const Projects: FC = () => (
                   <article>
                     <h3>Model(JSON)<sup>js</sup></h3>
                     <p>A Model class designed to serialize and transfer structured data within the services/apps you build or across networks and uses schema validation with Schema(JSON)<sup>js</sup>.</p>
-                    <p><Link to='/model-json-js' className='button is-link'>Learn More</Link></p>
+                    <p><Link to='https://fnalabs.github.io/model-json-js/' className='button is-link'>Learn More</Link></p>
                   </article>
                 </Box>
               </Column>
@@ -75,13 +77,12 @@ const Projects: FC = () => (
               <Column>
                 <Box>
                   <article>
-                    <h3>test-automation</h3>
-                    <p>A reusable automated browser test framework atop the popular Angular Protractor. If used simultaneously with our <a href='https://github.com/fnalabs/test-automation-starter'>starter kit</a>, which is built on Docker, you are able to automatically run tests in a containerized environment.</p>
+                    <h3>Starter Kits</h3>
+                    <p>Over the course of our open source development journey, we've identified common underlying structures in the projects we've built. We decided to abstract those structures as starter kits:</p>
                     <ul>
-                      <li><a href='https://github.com/fnalabs/starter-npm-js'>NPM package</a></li>
-                      <li><a href='https://github.com/fnalabs/starter-react-js'>React SSR PWA</a></li>
-                      <li><a href='https://github.com/fnalabs/starter-fastify-js'>Fastify service</a></li>
-                      <li><a href='https://github.com/fnalabs/starter-koa2-js'>Koa2 service</a></li>
+                      <li><Link to='https://github.com/fnalabs/starter-npm-js'>NPM package</Link></li>
+                      <li><Link to='https://github.com/fnalabs/starter-react-js'>React SSR PWA</Link></li>
+                      <li><Link to='https://github.com/fnalabs/starter-fastify-js'>Fastify Service</Link></li>
                     </ul>
                   </article>
                 </Box>

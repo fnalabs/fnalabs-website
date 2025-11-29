@@ -1,1 +1,3 @@
-export declare const Box: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Box: FC;
+export default Box;

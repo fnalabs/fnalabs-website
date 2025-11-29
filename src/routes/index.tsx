@@ -1,19 +1,14 @@
 import React from 'react'
-import { remoteAppLayout } from '../remotes'
-
-import Home from './Home/Home'
-import Projects from './Projects/Projects'
-import About from './About/About'
-import Support from './Support/Support'
-
-const AppLayout = React.lazy(remoteAppLayout)
+import AppLayout from '../components/AppLayout'
+import Home from './Home'
+import Projects from './Projects'
+import About from './About'
+import Support from './Support'
+import Cookie from './Cookie'
+import Privacy from './Privacy'
 
 const routes = {
-  element: (<AppLayout endLinks={[
-    { href: '/projects', label: 'Projects' },
-    { href: '/about', label: 'About' },
-    { href: '/support', label: 'Support' },
-  ]} color='transparent' spaced />),
+  element: <AppLayout />,
   children: [
     {
       index: true,
@@ -30,6 +25,14 @@ const routes = {
     {
       path: '/support',
       element: <Support />,
+    },
+    {
+      path: '/cookie',
+      element: <Cookie />,
+    },
+    {
+      path: '/privacy',
+      element: <Privacy />,
     },
   ],
 }

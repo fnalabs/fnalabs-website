@@ -1,1 +1,3 @@
-export declare const Email: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const Email: FC;
+export default Email;

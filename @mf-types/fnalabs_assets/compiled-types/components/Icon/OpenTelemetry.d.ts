@@ -1,1 +1,3 @@
-export declare const OpenTelemetry: () => import("react/jsx-runtime").JSX.Element;
+import { type FC } from 'react';
+export declare const OpenTelemetry: FC;
+export default OpenTelemetry;

@@ -1,12 +1,16 @@
-import type { FC } from 'react'
 import type { RouteObject } from 'react-router'
 
 import type { RemoteComponent } from '@mf-types/fnalabs_assets/compiled-types/types'
+import type { IHiveIO } from '@mf-types/fnalabs_assets/brands/HiveIO'
+import type { IModuleFederation } from '@mf-types/fnalabs_assets/brands/ModuleFederation'
+import type { IBlock } from '@mf-types/fnalabs_assets/Block'
 import type { IBox } from '@mf-types/fnalabs_assets/Box'
 import type { ICard } from '@mf-types/fnalabs_assets/Card'
+import type { ICell } from '@mf-types/fnalabs_assets/Cell'
 import type { IColumn } from '@mf-types/fnalabs_assets/Column'
 import type { IColumns } from '@mf-types/fnalabs_assets/Columns'
 import type { IContainer } from '@mf-types/fnalabs_assets/Container'
+import type { IGrid } from '@mf-types/fnalabs_assets/Grid'
 import type { IHero } from '@mf-types/fnalabs_assets/Hero'
 import type { IIcon } from '@mf-types/fnalabs_assets/Icon'
 import type { IImage } from '@mf-types/fnalabs_assets/Image'
@@ -24,26 +28,22 @@ interface IRemoteRoutes {
 }
 
 import { loadRemote } from '@module-federation/enhanced/runtime'
-import { ASSETS, HIVE_MFE } from './config'
+import { ASSETS, HIVE_MFE, MF_MFE } from './config'
 
-// Icon remote components
-export const remoteIconEfficiency = () => loadRemote(`${ASSETS}/icons/Efficiency`) as RemoteComponent<FC>
-export const remoteIconFemale = () => loadRemote(`${ASSETS}/icons/Female`) as RemoteComponent<FC>
-export const remoteIconFlexibility = () => loadRemote(`${ASSETS}/icons/Flexibility`) as RemoteComponent<FC>
-export const remoteIconHiveIO = () => loadRemote(`${ASSETS}/icons/HiveIO`) as RemoteComponent<FC>
-export const remoteIconMale = () => loadRemote(`${ASSETS}/icons/Male`) as RemoteComponent<FC>
-export const remoteIconPrivacy = () => loadRemote(`${ASSETS}/icons/Privacy`) as RemoteComponent<FC>
-export const remoteIconQuality = () => loadRemote(`${ASSETS}/icons/Quality`) as RemoteComponent<FC>
-export const remoteIconSuccinctness = () => loadRemote(`${ASSETS}/icons/Succinctness`) as RemoteComponent<FC>
-export const remoteIconSupport = () => loadRemote(`${ASSETS}/icons/Support`) as RemoteComponent<FC>
+// Brand Icon remote components
+export const remoteIconHiveIO = () => loadRemote(`${ASSETS}/brands/HiveIO`) as RemoteComponent<IHiveIO>
+export const remoteIconMF = () => loadRemote(`${ASSETS}/brands/ModuleFederation`) as RemoteComponent<IModuleFederation>
 
 // Bulma remote components
+export const remoteBlock = () => loadRemote(`${ASSETS}/Block`) as RemoteComponent<IBlock>
 export const remoteBox = () => loadRemote(`${ASSETS}/Box`) as RemoteComponent<IBox>
 export const remoteCard = () => loadRemote(`${ASSETS}/Card`) as RemoteComponent<ICard>
+export const remoteCell = () => loadRemote(`${ASSETS}/Cell`) as RemoteComponent<ICell>
 export const remoteColumn = () => loadRemote(`${ASSETS}/Column`) as RemoteComponent<IColumn>
 export const remoteColumns = () => loadRemote(`${ASSETS}/Columns`) as RemoteComponent<IColumns>
 export const remoteContainer = () =>
   loadRemote(`${ASSETS}/Container`) as RemoteComponent<IContainer>
+export const remoteGrid = () => loadRemote(`${ASSETS}/Grid`) as RemoteComponent<IGrid>
 export const remoteHero = () => loadRemote(`${ASSETS}/Hero`) as RemoteComponent<IHero>
 export const remoteIcon = () => loadRemote(`${ASSETS}/Icon`) as RemoteComponent<IIcon>
 export const remoteImage = () => loadRemote(`${ASSETS}/Image`) as RemoteComponent<IImage>
@@ -59,7 +59,9 @@ export const remoteLoading = () => loadRemote(`${ASSETS}/Loading`) as RemoteComp
 
 // MFE remote dependencies
 export const remoteHiveRoutes = () => loadRemote<IRemoteRoutes>(`${HIVE_MFE}/Routes`).then(m => m?.default) as Promise<RouteObject>
+export const remoteMFRoutes = () => loadRemote<IRemoteRoutes>(`${MF_MFE}/Routes`).then(m => m?.default) as Promise<RouteObject>
 
 export const MFE_LIST = [
   remoteHiveRoutes,
+  remoteMFRoutes,
 ]

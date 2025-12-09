@@ -6,33 +6,30 @@ import {
   remoteColumns,
   remoteContainer,
   remoteHero,
-  remoteIcon,
-  remoteIconHiveIO
+  remoteIconMF,
 } from '../remotes'
 
 const Column = lazy(remoteColumn)
 const Columns = lazy(remoteColumns)
 const Container = lazy(remoteContainer)
 const Hero = lazy(remoteHero)
-const Icon = lazy(remoteIcon)
-const IconHiveIO = lazy(remoteIconHiveIO)
+const IconMF = lazy(remoteIconMF)
 
 const Home: FC = () => (
   <Hero color='dark' size='fullheight' bold>
     <Container>
       <Columns vcentered>
-        <Column numericSize={6} content>
-          <h1 className='title'>
-            <Icon size='medium' wrapper>
-              <IconHiveIO />
-            </Icon>
-            Hive<sup>io</sup>
-          </h1>
-          <h2 className='subtitle'>A reactive, cloud-native framework for building microservices</h2>
-          <Link to='/hive' className='button is-link'>Learn More</Link>
+        <Column numericSize={6} content textPosition={['right-tablet', 'centered-mobile']}>
+          <h1 className='title'>Federated PWAs</h1>
+          <p className='subtitle'>A pattern to build scalable micro-frontend applications</p>
+          <Link to='/federation' className='button is-link'>Learn More</Link>
         </Column>
         <Column numericSize={6}>
-          graphic here
+          <Columns mobile>
+            <Column numericSize={6} numericSizeOffset={'3-mobile'}>
+              <IconMF />
+            </Column>
+          </Columns>
         </Column>
       </Columns>
     </Container>

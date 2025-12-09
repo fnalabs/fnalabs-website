@@ -2,6 +2,7 @@ import pkg from '../package.json'
 
 export const ASSETS = 'fnalabs_assets'
 export const HIVE_MFE = 'hive_website'
+export const MF_MFE = 'module_federation'
 
 export interface IConfig {
   name: string
@@ -12,6 +13,7 @@ export interface IConfig {
     }
   }
 }
+// TODO: make this config driven via env variables
 const CONFIG: IConfig = {
   name: pkg.name,
   remotes: {
@@ -22,6 +24,10 @@ const CONFIG: IConfig = {
     [HIVE_MFE]: {
       name: HIVE_MFE,
       entry: `http://localhost:3001/hive/mf-manifest.json`,
+    },
+    [MF_MFE]: {
+      name: MF_MFE,
+      entry: `http://localhost:3002/federation/mf-manifest.json`,
     },
   },
 }

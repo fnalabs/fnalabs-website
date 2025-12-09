@@ -1,0 +1,15 @@
+import type { RemoteComponent } from '@mf-types/fnalabs_assets/compiled-types/types';
+import type { IModuleFederation } from '@mf-types/fnalabs_assets/brands/ModuleFederation';
+import type { IColumn } from '@mf-types/fnalabs_assets/Column';
+import type { IColumns } from '@mf-types/fnalabs_assets/Columns';
+import type { IContainer } from '@mf-types/fnalabs_assets/Container';
+import type { ISection } from '@mf-types/fnalabs_assets/Section';
+import type { IHero } from '@mf-types/fnalabs_assets/Hero';
+import type { IAppLayout } from '@mf-types/fnalabs_assets/AppLayout';
+export declare const remoteModuleFederation: () => RemoteComponent<IModuleFederation>;
+export declare const remoteColumn: () => RemoteComponent<IColumn>;
+export declare const remoteColumns: () => RemoteComponent<IColumns>;
+export declare const remoteContainer: () => RemoteComponent<IContainer>;
+export declare const remoteHero: () => RemoteComponent<IHero>;
+export declare const remoteSection: () => RemoteComponent<ISection>;
+export declare const remoteAppLayout: () => RemoteComponent<IAppLayout>;

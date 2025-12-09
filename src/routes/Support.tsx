@@ -7,7 +7,6 @@ import {
   remoteImage,
   remoteMenu,
   remoteSection,
-  remoteIconSupport,
 } from '../remotes'
 
 const Column = lazy(remoteColumn)
@@ -17,7 +16,6 @@ const Hero = lazy(remoteHero)
 const Image = lazy(remoteImage)
 const Menu = lazy(remoteMenu)
 const Section = lazy(remoteSection)
-const IconSupport = lazy(remoteIconSupport)
 
 const Support: FC = () => (
   <>
@@ -27,8 +25,8 @@ const Support: FC = () => (
           <Column numericSize='8-desktop' numericSizeOffset='2-desktop'>
             <Columns centered vcentered>
               <Column narrow>
-                <Image fixedSize='96x96'>
-                  <IconSupport />
+                <Image fixedSize='96x96' centered hcentered>
+                  <i className='fa-solid fa-headset fa-6x has-text-primary' />
                 </Image>
               </Column>
 

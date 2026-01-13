@@ -26,6 +26,9 @@ const IconHiveIO = lazy(remoteIconHiveIO)
 
 const Projects: FC = () => (
   <>
+    <title>FnA Labs - Projects</title>
+    <meta name="description" content="Our open source software projects work for start-ups as well as enterprise businesses. Fn Awesome!" />
+
     <Hero color='dark' bold>
       <Container>
         <Columns>

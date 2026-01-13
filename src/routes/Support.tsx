@@ -19,6 +19,9 @@ const Section = lazy(remoteSection)
 
 const Support: FC = () => (
   <>
+    <title>FnA Labs - Support</title>
+    <meta name="description" content="Whether our users need local set-up assistance, product documentation, we have you covered. Let’s Fn Awesome!" />
+
     <Hero color='dark' bold>
       <Container>
         <Columns>
@@ -52,7 +55,7 @@ const Support: FC = () => (
                 <h3 className='subtitle'>Featured Projects</h3>
                 <Menu list={[
                   {
-                    label: 'HiveIO Framework',
+                    label: 'Hive^io Framework',
                     list: [
                       { href: '/hive', label: 'Homepage' },
                       { href: '/hive/overview', label: 'Overview' },
@@ -90,6 +93,14 @@ const Support: FC = () => (
               <Column narrow>
                 <h3 className='subtitle'>More Projects</h3>
                 <Menu list={[
+                  {
+                    label: 'Module Federation',
+                    list: [
+                      { href: 'https://github.com/fnalabs/fnalabs-website', label: 'FnA Labs' },
+                      { href: 'https://github.com/fnalabs/hive-website', label: 'Hive^io' },
+                      { href: 'https://github.com/fnalabs/module-federation', label: 'Module Federation' },
+                    ]
+                  },
                   {
                     label: 'Starter Kits',
                     list: [

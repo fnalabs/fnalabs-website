@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "description": "FnA Labs company website.",
   "scripts": {
-    "build": "NODE_ENV=production rspack build",
-    "dev": "NODE_ENV=development rspack serve",
+    "build": "NODE_ENV=production ROUTE=/ rspack build",
+    "dev": "NODE_ENV=development HOST=http://localhost:3000 ROUTE=/ rspack serve",
     "lint": "eslint .",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
@@ -31,6 +31,7 @@
     "react-router": "7.9.5"
   },
   "devDependencies": {
+    "@aaroon/workbox-rspack-plugin": "0.3.2",
     "@eslint/js": "9.39.1",
     "@rsbuild/core": "1.6.2",
     "@rsbuild/plugin-react": "1.4.2",

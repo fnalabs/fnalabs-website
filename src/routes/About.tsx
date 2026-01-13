@@ -26,6 +26,9 @@ const Section = lazy(remoteSection)
 
 const About: FC = () => (
   <>
+    <title>FnA Labs - About</title>
+    <meta name="description" content="At FnA Labs we work by applying the Five Paramounts to all of our products. Fn Awesome!" />
+
     <Hero color='dark' bold>
       <Container>
         <Columns>
@@ -91,20 +94,12 @@ const About: FC = () => (
         <Columns gapSize={8}>
           <Column numericSize='10-desktop' numericSizeOffset='1-desktop' content>
             <h2 className='title'>How We Work</h2>
-            <p className='subtitle'>The <strong>Six Paramounts</strong> are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Six Paramounts from beginning to end is our way of certifying the products we create.</p>
+            <p className='subtitle'>The <strong>Five Paramounts</strong> are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Five Paramounts from beginning to end is our way of certifying the products we create.</p>
 
             <Columns gapSize={8} multiline>
               <Column numericSize={12}>
                 <Columns gapSize={8}>
-                  <Column numericSize='6-desktop'>
-                    <Image fixedSize='96x96' centered hcentered>
-                      <i className='fa-solid fa-lock fa-5x has-text-primary' />
-                    </Image>
-                    <h3 className='has-text-centered'>Secure</h3>
-                    <p>TODO</p>
-                  </Column>
-
-                  <Column numericSize='6-desktop'>
+                  <Column numericSize='6-desktop' numericSizeOffset='3-desktop'>
                     <Image fixedSize='96x96' centered hcentered>
                       <i className='fa-solid fa-shield-halved fa-5x has-text-primary' />
                     </Image>

@@ -1,8 +1,10 @@
 import type { RouteObject } from 'react-router'
 
 import type { RemoteComponent } from '@mf-types/fnalabs_assets/compiled-types/types'
+
 import type { IHiveIO } from '@mf-types/fnalabs_assets/brands/HiveIO'
 import type { IModuleFederation } from '@mf-types/fnalabs_assets/brands/ModuleFederation'
+
 import type { IBlock } from '@mf-types/fnalabs_assets/Block'
 import type { IBox } from '@mf-types/fnalabs_assets/Box'
 import type { ICard } from '@mf-types/fnalabs_assets/Card'
@@ -19,16 +21,19 @@ import type { IMenu } from '@mf-types/fnalabs_assets/Menu'
 import type { IProgressBar } from '@mf-types/fnalabs_assets/ProgressBar'
 import type { ISection } from '@mf-types/fnalabs_assets/Section'
 
+import type { IAnalyticsToast } from '@mf-types/fnalabs_assets/AnalyticsToast'
+import type { ILoading } from '@mf-types/fnalabs_assets/Loading'
 import type { IAppLayout } from '@mf-types/fnalabs_assets/AppLayout'
 import type { IGlobalLayout } from '@mf-types/fnalabs_assets/GlobalLayout'
-import type { ILoading } from '@mf-types/fnalabs_assets/Loading'
+
+import type { IConsentProvider } from '@mf-types/fnalabs_assets/ConsentContext'
+
+import { loadRemote } from '@module-federation/enhanced/runtime'
+import { ASSETS, HIVE_MFE, MF_MFE } from './config'
 
 interface IRemoteRoutes {
   default: RouteObject
 }
-
-import { loadRemote } from '@module-federation/enhanced/runtime'
-import { ASSETS, HIVE_MFE, MF_MFE } from './config'
 
 // Brand Icon remote components
 export const remoteIconHiveIO = () => loadRemote(`${ASSETS}/brands/HiveIO`) as RemoteComponent<IHiveIO>
@@ -53,13 +58,17 @@ export const remoteProgressBar = () => loadRemote(`${ASSETS}/ProgressBar`) as Re
 export const remoteSection = () => loadRemote(`${ASSETS}/Section`) as RemoteComponent<ISection>
 
 // Custom remote components
+export const remoteAnalyticsToast = () => loadRemote(`${ASSETS}/AnalyticsToast`) as RemoteComponent<IAnalyticsToast>
+export const remoteLoading = () => loadRemote(`${ASSETS}/Loading`) as RemoteComponent<ILoading>
 export const remoteAppLayout = () => loadRemote(`${ASSETS}/AppLayout`) as RemoteComponent<IAppLayout>
 export const remoteGlobalLayout = () => loadRemote(`${ASSETS}/GlobalLayout`) as RemoteComponent<IGlobalLayout>
-export const remoteLoading = () => loadRemote(`${ASSETS}/Loading`) as RemoteComponent<ILoading>
 
 // MFE remote dependencies
 export const remoteHiveRoutes = () => loadRemote<IRemoteRoutes>(`${HIVE_MFE}/Routes`).then(m => m?.default) as Promise<RouteObject>
 export const remoteMFRoutes = () => loadRemote<IRemoteRoutes>(`${MF_MFE}/Routes`).then(m => m?.default) as Promise<RouteObject>
+
+// Contexts
+export const remoteConsentContext = () => loadRemote(`${ASSETS}/ConsentContext`) as RemoteComponent<IConsentProvider>
 
 export const MFE_LIST = [
   remoteHiveRoutes,

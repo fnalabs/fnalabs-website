@@ -1,0 +1,91 @@
+{
+  "id": "fnalabs_website",
+  "name": "fnalabs_website",
+  "metaData": {
+    "name": "fnalabs_website",
+    "globalName": "fnalabs_website",
+    "buildInfo": {
+      "buildVersion": "1.0.3",
+      "buildName": "fnalabs_website"
+    },
+    "publicPath": "https://fnalabs.com/",
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "pluginVersion": "2.3.0",
+    "prefetchInterface": false
+  },
+  "shared": [
+    {
+      "id": "fnalabs_website:react-dom",
+      "name": "react-dom",
+      "version": "19.2.4",
+      "requiredVersion": "19.2.4",
+      "singleton": true,
+      "assets": {
+        "js": {
+          "sync": [
+            "717.js",
+            "98.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "id": "fnalabs_website:react-router",
+      "name": "react-router",
+      "version": "7.13.2",
+      "requiredVersion": "7.13.2",
+      "singleton": true,
+      "assets": {
+        "js": {
+          "sync": [
+            "725.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "id": "fnalabs_website:react",
+      "name": "react",
+      "version": "19.2.4",
+      "requiredVersion": "19.2.4",
+      "singleton": true,
+      "assets": {
+        "js": {
+          "sync": [
+            "237.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": []
+}

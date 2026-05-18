@@ -23,6 +23,7 @@ import type { ISection } from '@mf-types/fnalabs_assets/Section'
 
 import type { IAnalyticsToast } from '@mf-types/fnalabs_assets/AnalyticsToast'
 import type { ILoading } from '@mf-types/fnalabs_assets/Loading'
+import type { IServiceWorker } from '@mf-types/fnalabs_assets/ServiceWorker'
 import type { IAppLayout } from '@mf-types/fnalabs_assets/AppLayout'
 import type { IGlobalLayout } from '@mf-types/fnalabs_assets/GlobalLayout'
 
@@ -60,6 +61,7 @@ export const remoteSection = () => loadRemote(`${ASSETS}/Section`) as RemoteComp
 // Custom remote components
 export const remoteAnalyticsToast = () => loadRemote(`${ASSETS}/AnalyticsToast`) as RemoteComponent<IAnalyticsToast>
 export const remoteLoading = () => loadRemote(`${ASSETS}/Loading`) as RemoteComponent<ILoading>
+export const remoteServiceWorker = () => loadRemote(`${ASSETS}/ServiceWorker`) as RemoteComponent<IServiceWorker>
 export const remoteAppLayout = () => loadRemote(`${ASSETS}/AppLayout`) as RemoteComponent<IAppLayout>
 export const remoteGlobalLayout = () => loadRemote(`${ASSETS}/GlobalLayout`) as RemoteComponent<IGlobalLayout>
 

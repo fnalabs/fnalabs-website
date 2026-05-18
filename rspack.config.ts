@@ -10,9 +10,10 @@ import { InjectManifest } from '@aaroon/workbox-rspack-plugin'
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack'
 import federationConfig from './federationConfig'
 
-const NODE_ENV = process.env.NODE_ENV || 'production';
-const ROUTE = process.env.ROUTE ?? '/';
 const HOST = process.env.HOST ?? 'http://localhost:3000';
+const ROUTE = process.env.ROUTE ?? '/';
+
+const NODE_ENV = process.env.NODE_ENV || 'production';
 const IS_DEV = NODE_ENV === 'development'
 
 const defaultConfig = {
@@ -21,7 +22,8 @@ const defaultConfig = {
   output: {
     name: '[name].[contenthash].js',
     path: join(__dirname, `./dist${ROUTE}`),
-    publicPath: `${HOST}${ROUTE}`
+    publicPath: `${HOST}${ROUTE}`,
+    clean: true
   },
   module: {
     rules: [
@@ -88,23 +90,12 @@ const config = () => {
       }
     : {
         ...defaultConfig,
-        output: { ...defaultConfig.output, filename: '[name].[contenthash].js' },
+        output: { ...defaultConfig.output, path: join(__dirname, `./docs${ROUTE}`) },
         devtool: 'source-map',
         optimization: { minimize: true },
         plugins: [
           ...defaultConfig.plugins,
           new InjectManifest({
-            dontCacheBustURLsMatching: /\.\w{8}\./,
-            manifestTransforms: [
-              async manifest => {
-                const newManifest = manifest.map(entry => ({
-                  ...entry,
-                  url: `${ROUTE}/${entry.url}`,
-                })
-                );
-                return { manifest: newManifest };
-              }
-            ],
             swDest: 'sw.js',
             swSrc: join(__dirname, './src/Worker.ts'),
           }),

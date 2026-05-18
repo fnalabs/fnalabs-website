@@ -1,6 +1,7 @@
 import * as pkg from '../package.json' with { type: 'json' }
-import React, { type FC, lazy } from 'react'
+import React, { type FC, lazy, Suspense } from 'react'
 import ReactDom from 'react-dom'
+import { Await, type RouteObject } from 'react-router'
 import { getInstance, registerRemotes, registerShared, preloadRemote } from '@module-federation/enhanced/runtime'
 import Router from './Router'
 import { remoteLoading } from './remotes'
@@ -47,10 +48,12 @@ const Loading = lazy(remoteLoading)
 const App: FC = () => {
   const appRoutes = useRoutes()
 
-  if (appRoutes.length === 0) {
-    return <Loading />
-  } else {
-    return <Router routes={appRoutes} />
-  }
+  return (
+    <Suspense fallback={<Loading />}>
+      <Await resolve={appRoutes}>
+        {(resolvedRoutes) => <Router routes={resolvedRoutes as RouteObject[]} />}
+      </Await>
+    </Suspense>
+  )
 }
 export default App

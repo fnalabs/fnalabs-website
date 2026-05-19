@@ -1,0 +1,158 @@
+import React, { type FC, lazy } from 'react'
+import { Link } from 'react-router'
+import {
+  remoteBlock,
+  remoteCard,
+  remoteColumn,
+  remoteColumns,
+  remoteContainer,
+  remoteHero,
+  remoteIcon,
+  remoteImage,
+  remoteMedia,
+  remoteSection,
+} from '../remotes'
+
+const Block = lazy(remoteBlock)
+const Card = lazy(remoteCard)
+const Column = lazy(remoteColumn)
+const Columns = lazy(remoteColumns)
+const Container = lazy(remoteContainer)
+const Hero = lazy(remoteHero)
+const Icon = lazy(remoteIcon)
+const Image = lazy(remoteImage)
+const Media = lazy(remoteMedia)
+const Section = lazy(remoteSection)
+
+const About: FC = () => (
+  <>
+    <title>FnA Labs - About</title>
+    <meta name="description" content="At FnA Labs we work by applying the Five Paramounts to all of our products. Fn Awesome!" />
+
+    <Hero color='dark' bold>
+      <Container>
+        <Columns>
+          <Column numericSize='8-desktop' numericSizeOffset='2-desktop'>
+            <Columns>
+              <Column numericSize={3}>
+                <Image fixedSize='128x128' centered hcentered>
+                  <i className='fa-solid fa-store fa-8x has-text-primary' />
+                </Image>
+              </Column>
+
+              <Column content>
+                <article>
+                  <h1 className='title'>About</h1>
+                  <p>FnA Labs, a research and development company, was founded in 2018 by my husband and me. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we can help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the tech industry and give our customers the ultimate quality in products.</p>
+                </article>
+              </Column>
+            </Columns>
+          </Column>
+        </Columns>
+      </Container>
+    </Hero>
+
+    <Section>
+      <Container>
+        <Columns>
+          <Column numericSize='10-desktop' numericSizeOffset='1-desktop'>
+            <h2 className='title'>Who We Are</h2>
+
+            <Columns vcentered>
+              <Column numericSize='6-desktop'>
+                <Card footer={(<Link to='https://github.com/feilers' className='card-footer-item has-text-light' aria-label='github'><Icon style='brands' name='github' /></Link>)}>
+                  <Media>
+                    <Block content>
+                      <h3 className='title is-4'>Felicia Eilers</h3>
+                      <h4 className='subtitle is-6'>Co-Owner</h4>
+                    </Block>
+                  </Media>
+                  <Block content>With over 15 years of experience in business relations, it gives me great pleasure to know that FnA Labs can help our communities in giving the people a product they deserve.</Block>
+
+                </Card>
+              </Column>
+
+              <Column numericSize='6-desktop'>
+                <Card footer={(<Link to='https://github.com/aeilers' className='card-footer-item has-text-light' aria-label='github'><Icon style='brands' name='github' /></Link>)}>
+                  <Media>
+                    <Block content>
+                      <h3 className='title is-4'>Adam Eilers</h3>
+                      <h4 className='subtitle is-6'>Co-Owner</h4>
+                    </Block>
+                  </Media>
+                  <Block content>I take great care in what I research and develop in our Lab to ensure our products are of superior quality leveraging over 15 years of software engineering experience.</Block>
+                </Card>
+              </Column>
+            </Columns>
+          </Column>
+        </Columns>
+      </Container>
+    </Section>
+
+    <Section>
+      <Container>
+        <Columns gapSize={8}>
+          <Column numericSize='10-desktop' numericSizeOffset='1-desktop' content>
+            <h2 className='title'>How We Work</h2>
+            <p className='subtitle'>The <strong>Five Paramounts</strong> are values that we place on ourselves to establish the best from our products. These values keep us on track and make sure we do not stray into the technical debts of code. Following the Five Paramounts from beginning to end is our way of certifying the products we create.</p>
+
+            <Columns gapSize={8} multiline>
+              <Column numericSize={12}>
+                <Columns gapSize={8}>
+                  <Column numericSize='6-desktop' numericSizeOffset='3-desktop'>
+                    <Image fixedSize='96x96' centered hcentered>
+                      <i className='fa-solid fa-shield-halved fa-5x has-text-primary' />
+                    </Image>
+                    <h3 className='has-text-centered'>Privacy</h3>
+                    <p>We strive to keep your information private. Your information is not sold to third parties. What information we gather is for FnA Labs only and is only used to help make a better product for you.</p>
+                  </Column>
+                </Columns>
+              </Column>
+
+              <Column numericSize={12}>
+                <Columns gapSize={8}>
+                  <Column numericSize='6-desktop'>
+                    <Image fixedSize='96x96' centered hcentered>
+                      <i className='fa-solid fa-up-down-left-right fa-5x has-text-primary' />
+                    </Image>
+                    <h3 className='has-text-centered'>Flexibility</h3>
+                    <p>We give our users as many options as possible to provide a <strong>customizable</strong> experience that truly fits their needs. We are capable of doing this by making sure our products are as <strong>un-opinionated</strong> as possible. We also take care that our products can scale horizontally to help you with future company <strong>growth</strong>.</p>
+                  </Column>
+
+                  <Column numericSize='6-desktop'>
+                    <Image fixedSize='96x96' centered hcentered>
+                      <i className='fa-solid fa-gauge-simple-high fa-5x has-text-primary' />
+                    </Image>
+                    <h3 className='has-text-centered'>Efficiency</h3>
+                    <p>FnA Labs gives you optimal <strong>performance</strong> by making sure our products load and run <strong>fast</strong> without sacrificing usability. We stay true to all use cases by choosing the right programming concepts for the solution. Our users will not have to wait and neither will their customers.</p>
+                  </Column>
+                </Columns>
+              </Column>
+
+              <Column numericSize={12}>
+                <Columns gapSize={8}>
+                  <Column numericSize='6-desktop'>
+                    <Image fixedSize='96x96' centered hcentered>
+                      <i className='fa-solid fa-check-double fa-5x has-text-primary' />
+                    </Image>
+                    <h3 className='has-text-centered'>Quality</h3>
+                    <p>With careful planning and <strong>validation</strong>, we can ensure that our code is up to par. We rigorously <strong>test</strong> our products to try to eliminate any bugs that may arise before an official release. Our products are to help, not hinder, our users.</p>
+                  </Column>
+
+                  <Column numericSize='6-desktop'>
+                    <Image fixedSize='96x96' centered hcentered>
+                      <i className='fa-solid fa-bullseye fa-5x has-text-primary' />
+                    </Image>
+                    <h3 className='has-text-centered'>Succinctness</h3>
+                    <p>At FnA Labs we only equip our products with code that is deemed necessary to get the job done. Our projects are a true essence of concise roles and responsibilities all wrapped up in a <strong>straightforward</strong> package.</p>
+                  </Column>
+                </Columns>
+              </Column>
+            </Columns>
+          </Column>
+        </Columns>
+      </Container>
+    </Section>
+  </>
+)
+export default About

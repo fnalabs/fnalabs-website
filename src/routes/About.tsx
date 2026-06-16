@@ -12,6 +12,7 @@ import {
   remoteMedia,
   remoteSection,
 } from '../remotes'
+import meta from '../metadata.json'
 
 const Block = lazy(remoteBlock)
 const Card = lazy(remoteCard)
@@ -26,8 +27,8 @@ const Section = lazy(remoteSection)
 
 const About: FC = () => (
   <>
-    <title>FnA Labs - About</title>
-    <meta name="description" content="At FnA Labs we work by applying the Five Paramounts to all of our products. Fn Awesome!" />
+    <title>{meta['/about'].title}</title>
+    <meta name="description" content={meta['/about'].description} />
 
     <Hero color='dark' bold>
       <Container>
@@ -40,7 +41,7 @@ const About: FC = () => (
                 </Image>
               </Column>
 
-              <Column content>
+              <Column content textPosition={['left-tablet', 'centered-mobile']}>
                 <article>
                   <h1 className='title'>About</h1>
                   <p>FnA Labs, a research and development company, was founded in 2018 by my husband and me. However, the company has existed within both of us for quite some time. We are a modern mom and pop shop trying to enrich communities in both the physical and digital world. Our goal is to make sure that we can help out one community at a time by providing you products of quality and value. FnA Labs is here to help evolve the tech industry and give our customers the ultimate quality in products.</p>

@@ -1,17 +1,18 @@
-export const BRAND_LINK = { href: '/', label: 'FnA Labs', brandIcon: 'FnALabsInverted' }
+import type { IBrandLink, INavLink } from '../@mf-types/fnalabs_assets/Navbar'
+import type { ISocialLink } from '../@mf-types/fnalabs_assets/SocialBrand'
 
-export const HOME_LINK = { href: '/hive', label: 'Home' }
+export const BRAND_LINK: IBrandLink = { href: '/', label: 'FnA Labs', brandIcon: 'FnALabsInverted' }
 
-export const ABOUT_LINK = { href: '/about', label: 'About' }
-export const PROJECTS_LINK = { href: '/projects', label: 'Projects' }
-export const SUPPORT_LINK = { href: '/support', label: 'Support' }
+export const ABOUT_LINK: INavLink = { href: '/about', label: 'About' }
+export const PROJECTS_LINK: INavLink = { href: '/projects', label: 'Projects' }
+export const SUPPORT_LINK: INavLink = { href: '/support', label: 'Support' }
 
-export const COOKIE_LINK = { href: '/cookie', label: 'Cookie' }
-export const PRIVACY_LINK = { href: '/privacy', label: 'Privacy' }
+export const COOKIE_LINK: INavLink = { href: '/cookie', label: 'Cookie' }
+export const PRIVACY_LINK: INavLink = { href: '/privacy', label: 'Privacy' }
 
-export const GITHUB_LINK = { href: 'https://github.com/fnalabs', style: 'brands', name: 'github' }
-export const NPM_LINK = { href: 'https://www.npmjs.com/org/fnalabs', style: 'brands', name: 'npm' }
-export const EMAIL_LINK = { href: 'mailto:contact@fnalabs.com', style: 'regular', name: 'envelope' }
+export const GITHUB_LINK: ISocialLink = { href: 'https://github.com/fnalabs', label: 'Github projects', style: 'brands', name: 'github' }
+export const NPM_LINK: ISocialLink = { href: 'https://www.npmjs.com/org/fnalabs', label: 'NPM projects', style: 'brands', name: 'npm' }
+export const EMAIL_LINK: ISocialLink = { href: 'mailto:contact@fnalabs.com', label: 'Email our team', style: 'regular', name: 'envelope' }
 
 export const BRAND_LINK_LIST = [BRAND_LINK]
 export const NAV_LINK_LIST = [

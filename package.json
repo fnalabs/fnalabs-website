@@ -4,7 +4,7 @@
   "description": "FnA Labs company website.",
   "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production HOST=https://fnalabs.com ROUTE=/ rspack build",
+    "build": "NODE_ENV=production HOST=https://fnalabs.com ROUTE=/ rspack build && node bin/sitemap",
     "debug": "NODE_ENV=development HOST=http://localhost:3000 ROUTE=/ FEDERATION_DEBUG=true rspack serve",
     "dev": "NODE_ENV=development HOST=http://localhost:3000 ROUTE=/ rspack serve",
     "lint": "eslint .",
@@ -49,6 +49,7 @@
     "globals": "17.6.0",
     "prettier": "3.8.4",
     "react-refresh": "0.18.0",
+    "sitemap": "9.0.1",
     "ts-jest": "29.4.11",
     "type-fest": "5.7.0",
     "typescript": "5.9.3",

@@ -1,15 +1,15 @@
 import React, { type FC, lazy } from 'react'
 import { Link } from 'react-router'
-
 import { remoteContainer, remoteSection } from '../remotes'
+import meta from '../metadata.json'
 
 const Container = lazy(remoteContainer)
 const Section = lazy(remoteSection)
 
 const Privacy: FC = () => (
   <>
-    <title>FnA Labs - Privacy Policy</title>
-    <meta name="description" content="Privacy policy for the FnA Labs company website." />
+    <title>{meta['/privacy'].title}</title>
+    <meta name="description" content={meta['/privacy'].description} />
 
     <Section article>
       <Container content>

@@ -8,6 +8,7 @@ import {
   remoteMenu,
   remoteSection,
 } from '../remotes'
+import meta from '../metadata.json'
 
 const Column = lazy(remoteColumn)
 const Columns = lazy(remoteColumns)
@@ -19,8 +20,8 @@ const Section = lazy(remoteSection)
 
 const Support: FC = () => (
   <>
-    <title>FnA Labs - Support</title>
-    <meta name="description" content="Whether our users need local set-up assistance, product documentation, we have you covered. Let’s Fn Awesome!" />
+    <title>{meta['/support'].title}</title>
+    <meta name="description" content={meta['/support'].description} />
 
     <Hero color='dark' bold>
       <Container>
@@ -33,11 +34,9 @@ const Support: FC = () => (
                 </Image>
               </Column>
 
-              <Column narrow content>
-                <article>
-                  <h1 className='title'>Support</h1>
-                  <p className='subtitle'>How can we help you?</p>
-                </article>
+              <Column narrow content textPosition={['left-tablet', 'centered-mobile']}>
+                <h1 className='title'>Support</h1>
+                <p className='subtitle'>How can we help you?</p>
               </Column>
             </Columns>
           </Column>
@@ -50,9 +49,9 @@ const Support: FC = () => (
         <Columns>
           <Column numericSize='10-desktop' numericSizeOffset='1-desktop'>
             <Columns>
-              <Column />
+              <Column hiddenTouch />
               <Column narrow>
-                <h3 className='subtitle'>Featured Projects</h3>
+                <h2 className='subtitle'>Featured Projects</h2>
                 <Menu list={[
                   {
                     label: 'Hive^io Framework',
@@ -61,69 +60,69 @@ const Support: FC = () => (
                       { href: '/hive/overview', label: 'Overview' },
                       { href: '/hive/start', label: 'Get Started' },
                       { href: '/hive/documentation', label: 'Documentation', list: [
-                        { href: 'https://npmjs.com/package/hive-io', label: 'Class Library (NPM)' },
-                        { href: 'https://hub.docker.com/r/fnalabs/hive-base-js', label: 'Base (Docker)' },
-                        { href: 'https://hub.docker.com/r/fnalabs/hive-producer-js', label: 'Producer (Docker)' },
-                        { href: 'https://hub.docker.com/r/fnalabs/hive-consumer-js', label: 'Consumer (Docker)' },
-                        { href: 'https://hub.docker.com/r/fnalabs/hive-stream-processor-js', label: 'Stream Processor (Docker)' },
-                        { href: 'https://github.com/fnalabs/hive-io', label: 'Github' },
+                        { href: 'https://npmjs.com/package/hive-io', label: 'Class Library (NPM)', external: true },
+                        { href: 'https://hub.docker.com/r/fnalabs/hive-base-js', label: 'Base (Docker)', external: true },
+                        { href: 'https://hub.docker.com/r/fnalabs/hive-producer-js', label: 'Producer (Docker)', external: true },
+                        { href: 'https://hub.docker.com/r/fnalabs/hive-consumer-js', label: 'Consumer (Docker)', external: true },
+                        { href: 'https://hub.docker.com/r/fnalabs/hive-stream-processor-js', label: 'Stream Processor (Docker)', external: true },
+                        { href: 'https://github.com/fnalabs/hive-io', label: 'Github', external: true },
                       ]},
                     ]
                   },
                   {
                     label: 'Schema(JSON)JS',
                     list: [
-                      { href: 'https://fnalabs.github.com/schema-json-js/', label: 'Documentation' },
-                      { href: 'https://npmjs.com/package/schema-json-js', label: 'NPM' },
-                      { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/schema-json-js', label: 'Github' },
+                      { href: 'https://fnalabs.github.com/schema-json-js/', label: 'Documentation', external: true },
+                      { href: 'https://npmjs.com/package/schema-json-js', label: 'NPM', external: true },
+                      { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/schema-json-js', label: 'Github', external: true },
                     ]
                   },
                   {
                     label: 'Model(JSON)JS',
                     list: [
-                      { href: 'https://fnalabs.github.com/model-json-js/', label: 'Documentation' },
-                      { href: 'https://npmjs.com/package/model-json-js', label: 'NPM' },
-                      { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/model-json-js', label: 'Github' },
+                      { href: 'https://fnalabs.github.com/model-json-js/', label: 'Documentation', external: true },
+                      { href: 'https://npmjs.com/package/model-json-js', label: 'NPM', external: true },
+                      { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/model-json-js', label: 'Github', external: true },
                     ]
                   },
                 ]} />
               </Column>
 
-              <Column />
+              <Column hiddenTouch />
               <Column narrow>
-                <h3 className='subtitle'>More Projects</h3>
+                <h2 className='subtitle'>More Projects</h2>
                 <Menu list={[
                   {
                     label: 'Module Federation',
                     list: [
-                      { href: 'https://github.com/fnalabs/fnalabs-website', label: 'FnA Labs' },
-                      { href: 'https://github.com/fnalabs/hive-website', label: 'Hive^io' },
-                      { href: 'https://github.com/fnalabs/module-federation', label: 'Module Federation' },
+                      { href: 'https://github.com/fnalabs/fnalabs-website', label: 'FnA Labs', external: true },
+                      { href: 'https://github.com/fnalabs/hive-website', label: 'Hive^io', external: true },
+                      { href: 'https://github.com/fnalabs/module-federation', label: 'Module Federation', external: true },
                     ]
                   },
                   {
                     label: 'Starter Kits',
                     list: [
-                      { href: 'https://github.com/fnalabs/starter-npm-js', label: 'NPM Package' },
-                      { href: 'https://github.com/fnalabs/starter-react-js', label: 'React SSR PWA' },
-                      { href: 'https://github.com/fnalabs/starter-fastify-js', label: 'Fastify Service' },
+                      { href: 'https://github.com/fnalabs/starter-npm-js', label: 'NPM Package', external: true },
+                      { href: 'https://github.com/fnalabs/starter-react-js', label: 'React SSR PWA', external: true },
+                      { href: 'https://github.com/fnalabs/starter-fastify-js', label: 'Fastify Service', external: true },
                     ]
                   },
                 ]} />
 
-                <h3 className='subtitle'>Contacts</h3>
+                <h2 className='subtitle'>Contacts</h2>
                 <Menu list={[
                   {
                     label: 'Emails',
                     list: [
-                      { href: 'mailto:support@fnalabs.com', label: 'Support' },
-                      { href: 'mailto:contact@fnalabs.com', label: 'General' },
+                      { href: 'mailto:support@fnalabs.com', label: 'Support', external: true },
+                      { href: 'mailto:contact@fnalabs.com', label: 'General', external: true },
                     ]
                   },
                 ]} />
               </Column>
 
-              <Column />
+              <Column hiddenTouch />
             </Columns>
           </Column>
         </Columns>

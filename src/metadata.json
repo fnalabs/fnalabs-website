@@ -1,49 +1,106 @@
 {
   "common": {
-    "siteName": "FnA Labs",
     "baseUrl": "https://fnalabs.com",
-    "imageUrl": "https://fnalabs.com/icon_512x512.png",
-    "cacheTime": 600000
+    "imageUrl": "https://fnalabs.com/icon_512x512.png"
   },
   "/": {
-    "name": "home",
+    "title": "FnA Labs",
     "description": "FnA Labs researches and developes advanced concepts to give you the finest products out there. Fn Awesome!",
-    "url": "https://fnalabs.com",
     "priority": 1.0
   },
   "/projects": {
-    "name": "projects",
-    "title": "Projects",
+    "title": "FnA Labs - Projects",
     "description": "Our open source software projects work for start-ups as well as enterprise businesses. Fn Awesome!",
-    "url": "https://fnalabs.com/projects",
     "priority": 1.0
   },
   "/about": {
-    "name": "about",
-    "title": "About",
+    "title": "FnA Labs - About",
     "description": "At FnA Labs we work by applying the Five Paramounts to all of our products. Fn Awesome!",
-    "url": "https://fnalabs.com/about",
     "priority": 1.0
   },
   "/support": {
-    "name": "support",
-    "title": "Support",
-    "description": "Whether our users need local set-up assistance, product documentation, we have you covered. Let’s Fn Awesome!",
-    "url": "https://fnalabs.com/support",
+    "title": "FnA Labs - Support",
+    "description": "Whether our users need local set-up assistance, product documentation, we have you covered. Let's Fn Awesome!",
+    "priority": 1.0
+  },
+  "/federation": {
+    "title": "FnA Labs | Module Federation",
+    "description": "Hive^io is a reactive, cloud-native framework for building microservices.",
+    "priority": 1.0
+  },
+  "/hive": {
+    "title": "FnA Labs | Hive^io",
+    "description": "Hive^io is a reactive, cloud-native framework for building microservices.",
+    "priority": 1.0
+  },
+  "/hive/overview": {
+    "title": "FnA Labs | Hive^io - Overview",
+    "description": "Overview of Hive^io: a reactive, cloud-native framework. The following describes project tenets, background, and roadmap.",
+    "priority": 1.0
+  },
+  "/hive/model": {
+    "title": "FnA Labs | Hive^io - Data Model",
+    "description": "Data Modeling in Hive^io: a reactive, cloud-native framework. The following describes JSON Serialization.",
+    "priority": 1.0
+  },
+  "/hive/domain": {
+    "title": "FnA Labs | Hive^io - Domain Logic",
+    "description": "Domain Logic in Hive^io: a reactive, cloud-native framework. The following describes the use of the Actor Model.",
+    "priority": 1.0
+  },
+  "/hive/infrastructure": {
+    "title": "FnA Labs | Hive^io - Infrastructure",
+    "description": "Infrastructure in Hive^io: a reactive, cloud-native framework. The following describes patterns and infrastructure as code.",
+    "priority": 1.0
+  },
+  "/hive/telemetry": {
+    "title": "FnA Labs | Hive^io - Telemetry",
+    "description": "Telemetry in Hive^io: a reactive, cloud-native framework. The following describes our integration with OpenTelemetry.",
+    "priority": 1.0
+  },
+  "/hive/start": {
+    "title": "FnA Labs | Hive^io - Get Started",
+    "description": "Get started with Hive^io: a reactive, cloud-native framework. Follow along with the setup instructions and multiple examples.",
+    "priority": 1.0
+  },
+  "/hive/setup": {
+    "title": "FnA Labs | Hive^io - Setup",
+    "description": "Setup Hive^io: a reactive, cloud-native framework. Follow the setup process for domain logic modules and infrastructure.",
+    "priority": 1.0
+  },
+  "/hive/basic": {
+    "title": "FnA Labs | Hive^io - Basic Example",
+    "description": "A straightforward example implementation of Actors and Models with Hive^io: a reactive, cloud-native framework.",
+    "priority": 1.0
+  },
+  "/hive/rest": {
+    "title": "FnA Labs | Hive^io - REST Example",
+    "description": "A REST example implementation with Hive^io: a reactive, cloud-native framework.",
+    "priority": 1.0
+  },
+  "/hive/cqrs-es": {
+    "title": "FnA Labs | Hive^io - CQRS/ES Example",
+    "description": "A CQRS/ES example implementation with Hive^io: a reactive, cloud-native framework.",
+    "priority": 1.0
+  },
+  "/hive/documentation": {
+    "title": "FnA Labs | Hive^io - Documentation",
+    "description": "Documentation for Hive^io: a reactive, cloud-native framework. Reference details of the API for the domain logic library.",
+    "priority": 1.0
+  },
+  "/hive/environments": {
+    "title": "FnA Labs | Hive^io - Environments",
+    "description": "Environment configurations for Hive^io: a reactive, cloud-native framework. Reference details for each microservice image.",
     "priority": 1.0
   },
   "/cookie": {
-    "name": "cookie",
-    "title": "Cookie Policy",
+    "title": "FnA Labs - Cookie Policy",
     "description": "Privacy policy for the FnA Labs company website.",
-    "url": "https://fnalabs.com/cookie",
     "priority": 0.0
   },
   "/privacy": {
-    "name": "privacy",
-    "title": "Privacy Policy",
+    "title": "FnA Labs - Privacy Policy",
     "description": "Privacy policy for the FnA Labs company website.",
-    "url": "https://fnalabs.com/privacy",
     "priority": 0.0
   }
 }

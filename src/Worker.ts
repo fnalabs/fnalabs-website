@@ -1,6 +1,8 @@
 /* eslint-env serviceworker */
 import { setCacheNameDetails } from 'workbox-core'
 import { precacheAndRoute } from 'workbox-precaching'
+import { registerRoute, Route } from 'workbox-routing'
+import { CacheFirst } from 'workbox-strategies'
 import * as pkg from '../package.json'
 import cfg, { ASSETS, HIVE_MFE, MF_MFE } from './config'
 
@@ -34,3 +36,10 @@ precacheAndRoute([
   // @ts-expect-error skipping this check
   ...self.__WB_MF_MFE_MANIFEST,
 ])
+
+// caching styles from Cloudflare CDN
+const stylesRoute = new Route(
+  ({ url }) => url.hostname === 'cdnjs.cloudflare.com',
+  new CacheFirst({ cacheName: 'fnalabs_website-styles' })
+)
+registerRoute(stylesRoute)

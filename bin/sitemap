@@ -1,28 +1,23 @@
 #! /usr/bin/env node
-const fs = require('fs')
-const sm = require('sitemap')
-
-const meta = require('../src/metadata.json')
+import { createWriteStream } from 'fs'
+import { SitemapStream } from 'sitemap'
+import meta from '../src/metadata.json' with { type: 'json' }
 
 const pathRegex = /^\//
 
-// generate sitemap from metadata
-const sitemapContent = {
-  hostname: meta.common.baseUrl,
-  destinationDir: 'dist/client/',
-  sourceData: []
-}
-for (const key in meta) {
-  if (pathRegex.test(key)) {
-    sitemapContent.sourceData.push({
-      url: meta[key].url,
-      lastmodrealtime: true,
-      lastmodfile: meta.common.lastmodfile,
-      priority: meta[key].priority
+const sitemap = new SitemapStream({ hostname: meta.common.baseUrl })
+
+const writeStream = createWriteStream('./docs/sitemap.xml')
+sitemap.pipe(writeStream)
+
+for (const url in meta) {
+  if (pathRegex.test(url)) {
+    sitemap.write({
+      url,
+      changefreq: meta[url].changefreq || 'yearly',
+      priority: meta[url].priority
     })
   }
 }
-const sitemap = sm.simpleSitemapAndIndex(sitemapContent)
 
-// write sitemap to client output
-fs.writeFileSync('dist/client/sitemap.xml', sitemap.toString())
+sitemap.end()

@@ -7,6 +7,7 @@ import Router from './Router'
 import { remoteLoading } from './remotes'
 import useRoutes from './hooks/useRoutes'
 import cfg from './config'
+// import './styles.scss'
 
 getInstance()
 registerRemotes(Object.entries(cfg.remotes).map(([name, remote]) => ({

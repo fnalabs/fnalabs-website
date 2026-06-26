@@ -1,4 +1,3 @@
-/* eslint-env serviceworker */
 import { setCacheNameDetails } from 'workbox-core'
 import { precacheAndRoute } from 'workbox-precaching'
 import { registerRoute, Route } from 'workbox-routing'

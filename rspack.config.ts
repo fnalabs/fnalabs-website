@@ -26,7 +26,10 @@ const defaultConfig = {
     path: join(__dirname, `./dist${ROUTE}`),
     publicPath: `${HOST}${ROUTE}`,
     clean: {
-      keep: (path: string) => path.includes('icon_') || path.includes('CNAME') || path.includes('/manifest.json'),
+      keep: (path: string) =>
+        path.includes('icon_') ||
+        path.includes('CNAME') ||
+        path.includes('/manifest.json'),
     },
   },
   module: {
@@ -101,6 +104,21 @@ const config = () => {
   return IS_DEV
     ? {
         ...defaultConfig,
+        // NOTE: uncomment when build process is fully supported
+        // module: {
+        //   ...defaultConfig.module,
+        //   rules: [
+        //     ...defaultConfig.module.rules,
+        //     {
+        //       test: /\.scss$/,
+        //       use: [
+        //         'style-loader',
+        //         'css-loader',
+        //         'sass-loader',
+        //       ],
+        //     },
+        //   ],
+        // },
         devServer: {
           port: 3000,
           historyApiFallback: true,

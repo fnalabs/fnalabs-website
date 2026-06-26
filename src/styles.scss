@@ -1,0 +1,15 @@
+@use "bulma/sass/utilities";
+
+// Import the components you need
+@forward "bulma/sass/base";
+@forward "bulma/sass/elements/progress";
+@forward "bulma/sass/grid/columns";
+@forward "bulma/sass/layout/container";
+@forward "bulma/sass/layout/hero";
+
+// Import the themes so that all CSS variables have a value
+@forward "bulma/sass/themes";
+
+.box.is-fullheight {
+  height: 100%;
+}

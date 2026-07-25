@@ -20,7 +20,7 @@ const Home: FC = () => (
     <title>{meta['/'].title}</title>
     <meta name="description" content={meta['/'].description} />
 
-    <Hero color='dark' size='fullheight' bold>
+    <Hero color='dark' bold withNavbar>
       <Container>
         <Columns vcentered>
           <Column numericSize={6} content textPosition={['right-tablet', 'centered-mobile']}>

@@ -1,5 +1,5 @@
+import type { FC, ReactNode } from 'react';
 import type { FixedSize, RatioSize } from '../../types';
-import { type FC, type ReactNode } from 'react';
 export interface IImage {
     children: ReactNode;
     fixedSize?: FixedSize;

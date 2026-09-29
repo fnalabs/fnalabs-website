@@ -1,4 +1,3 @@
-import { join } from 'path'
 import {
   DefinePlugin,
   HtmlRspackPlugin,
@@ -19,11 +18,11 @@ const IS_DEV = NODE_ENV === 'development'
 const pathRegex = /^\//
 
 const defaultConfig = {
-  entry: { main: join(__dirname, './src/index.tsx') },
+  entry: { main: './src/index.tsx' },
   resolve: { extensions: ['...', '.ts', '.tsx', '.jsx'] },
   output: {
-    name: '[name].[contenthash].js',
-    path: join(__dirname, `./dist${ROUTE}`),
+    filename: '[name].[contenthash].js',
+    path: `./dist${ROUTE}`,
     publicPath: `${HOST}${ROUTE}`,
     clean: {
       keep: (path: string) =>
@@ -122,7 +121,7 @@ const config = () => {
         devServer: {
           port: 3000,
           historyApiFallback: true,
-          static: { directory: join(__dirname, `./dist${ROUTE}`) },
+          static: { directory: `./dist${ROUTE}` },
           liveReload: true,
           headers: {
             'Access-Control-Allow-Origin': '*',
@@ -139,14 +138,14 @@ const config = () => {
       }
     : {
         ...defaultConfig,
-        output: { ...defaultConfig.output, path: join(__dirname, `./docs${ROUTE}`) },
+        output: { ...defaultConfig.output, path: `./docs${ROUTE}` },
         devtool: 'source-map',
         optimization: { minimize: true },
         plugins: [
           ...defaultConfig.plugins,
           new InjectManifest({
             swDest: 'sw.js',
-            swSrc: join(__dirname, './src/Worker.ts'),
+            swSrc: './src/Worker.ts',
           }),
         ],
       }

@@ -36,6 +36,7 @@ registerShared({
   "react-router": {
     version: pkg.dependencies['react-router'],
     scope: "default",
+    lib: () => import('react-router'),
     shareConfig: {
       singleton: true,
       requiredVersion: pkg.dependencies['react-router'],

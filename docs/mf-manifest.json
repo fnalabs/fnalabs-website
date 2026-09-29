@@ -20,19 +20,19 @@
       "zip": "",
       "api": ""
     },
-    "pluginVersion": "2.6.0"
+    "pluginVersion": "2.8.0"
   },
   "shared": [
     {
       "id": "fnalabs_website:react",
       "name": "react",
-      "version": "19.2.7",
+      "version": "19.2.8",
       "singleton": true,
-      "requiredVersion": "19.2.7",
+      "requiredVersion": "19.2.8",
       "assets": {
         "js": {
           "sync": [
-            "237.js"
+            "237.2471d506ce8c5770.js"
           ],
           "async": []
         },
@@ -45,14 +45,14 @@
     {
       "id": "fnalabs_website:react-dom",
       "name": "react-dom",
-      "version": "19.2.7",
+      "version": "19.2.8",
       "singleton": true,
-      "requiredVersion": "19.2.7",
+      "requiredVersion": "19.2.8",
       "assets": {
         "js": {
           "sync": [
-            "717.js",
-            "98.js"
+            "717.37d50579b03a7f03.js",
+            "98.0f1011a10547d4ef.js"
           ],
           "async": []
         },
@@ -65,13 +65,13 @@
     {
       "id": "fnalabs_website:react-router",
       "name": "react-router",
-      "version": "8.0.1",
+      "version": "8.2.0",
       "singleton": true,
-      "requiredVersion": "8.0.1",
+      "requiredVersion": "8.2.0",
       "assets": {
         "js": {
           "sync": [
-            "947.js"
+            "947.2c3274bc5564fb0e.js"
           ],
           "async": []
         },

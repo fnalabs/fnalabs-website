@@ -25,7 +25,10 @@ const Home: FC = () => (
         <Columns vcentered>
           <Column numericSize={6} content textPosition={['right-tablet', 'centered-mobile']}>
             <h1 className='title'>Federated PWAs</h1>
-            <p className='subtitle'>A <Link to='/federation'>pattern</Link> to build scalable micro-frontend applications</p>
+            <p className='subtitle'>
+              A <Link to='/federation'>pattern</Link> to build scalable micro-frontend applications<br />
+              TODO: link to storybook
+            </p>
           </Column>
           <Column numericSize={6}>
             <Columns mobile>

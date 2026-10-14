@@ -6,6 +6,7 @@ import {
   remoteContainer,
   remoteHero,
   remoteIconMF,
+  remoteTag,
 } from '../remotes'
 import meta from '../metadata.json'
 
@@ -14,6 +15,7 @@ const Columns = lazy(remoteColumns)
 const Container = lazy(remoteContainer)
 const Hero = lazy(remoteHero)
 const IconMF = lazy(remoteIconMF)
+const Tag = lazy(remoteTag)
 
 const Home: FC = () => (
   <>
@@ -26,9 +28,9 @@ const Home: FC = () => (
           <Column numericSize={6} content textPosition={['right-tablet', 'centered-mobile']}>
             <h1 className='title'>Federated PWAs</h1>
             <p className='subtitle'>
-              A <Link to='/federation'>pattern</Link> to build scalable micro-frontend applications<br />
-              TODO: link to storybook
+              A <Link to='/federation'>pattern</Link> to build scalable micro-frontend applications
             </p>
+            <p className='subtitle'><Tag color='info'>NEW</Tag> Added link to our <Link to="https://fnalabs.github.io/fnalabs-assets/storybook/" target='_blank' rel='noopener noreferrer'>Storybook</Link></p>
           </Column>
           <Column numericSize={6}>
             <Columns mobile>

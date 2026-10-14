@@ -20,6 +20,7 @@ import type { IMedia } from '../@mf-types/fnalabs_assets/Media'
 import type { IMenu } from '../@mf-types/fnalabs_assets/Menu'
 import type { IProgressBar } from '../@mf-types/fnalabs_assets/ProgressBar'
 import type { ISection } from '../@mf-types/fnalabs_assets/Section'
+import type { ITag } from '../@mf-types/fnalabs_assets/Tag'
 
 import type { IAnalyticsToast } from '../@mf-types/fnalabs_assets/AnalyticsToast'
 import type { ILoading } from '../@mf-types/fnalabs_assets/Loading'
@@ -57,6 +58,7 @@ export const remoteMedia = () => loadRemote(`${ASSETS}/Media`) as RemoteComponen
 export const remoteMenu = () => loadRemote(`${ASSETS}/Menu`) as RemoteComponent<IMenu>
 export const remoteProgressBar = () => loadRemote(`${ASSETS}/ProgressBar`) as RemoteComponent<IProgressBar>
 export const remoteSection = () => loadRemote(`${ASSETS}/Section`) as RemoteComponent<ISection>
+export const remoteTag = () => loadRemote(`${ASSETS}/Tag`) as RemoteComponent<ITag>
 
 // Custom remote components
 export const remoteAnalyticsToast = () => loadRemote(`${ASSETS}/AnalyticsToast`) as RemoteComponent<IAnalyticsToast>

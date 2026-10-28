@@ -72,7 +72,7 @@ const Support: FC = () => (
                   {
                     label: 'Schema(JSON)JS',
                     list: [
-                      { href: 'https://fnalabs.github.com/schema-json-js/', label: 'Documentation', external: true },
+                      { href: 'https://fnalabs.github.io/schema-json-js/', label: 'Documentation', external: true },
                       { href: 'https://npmjs.com/package/schema-json-js', label: 'NPM', external: true },
                       { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/schema-json-js', label: 'Github', external: true },
                     ]
@@ -80,7 +80,7 @@ const Support: FC = () => (
                   {
                     label: 'Model(JSON)JS',
                     list: [
-                      { href: 'https://fnalabs.github.com/model-json-js/', label: 'Documentation', external: true },
+                      { href: 'https://fnalabs.github.io/model-json-js/', label: 'Documentation', external: true },
                       { href: 'https://npmjs.com/package/model-json-js', label: 'NPM', external: true },
                       { href: 'https://github.com/fnalabs/lib-js/tree/master/packages/model-json-js', label: 'Github', external: true },
                     ]
